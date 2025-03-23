@@ -70,7 +70,7 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
     }
 ```
 #### Current thinking, how can we get here? Right now, that answer is as open as it has ever been, example—
-
+$$
 % 1. Define the feature vector from the game state (using the 27 variables, abbreviated)
 \mathbf{X}(t) = \begin{bmatrix}
 \text{Game Time} \\
@@ -103,4 +103,4 @@ T_{\text{end}} = t + \Delta t \quad \text{with} \quad
 % 5. Express the dynamic update of TMP as a function of game events.
 \text{TMP}(t+\Delta t) = \text{TMP}(t) + \eta(t)
 \quad \text{where } \eta(t) \text{ represents the net effect of in-game events (team fights, tactics, etc.)}
-
+$$
