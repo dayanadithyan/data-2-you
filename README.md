@@ -69,3 +69,38 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
         expectedWinRate
     }
 ```
+#### Current thinking, how can we get here? Right now, that answer is as open as it has ever been, example—
+
+% 1. Define the feature vector from the game state (using the 27 variables, abbreviated)
+\mathbf{X}(t) = \begin{bmatrix}
+\text{Game Time} \\
+\text{Kills} \\
+\text{Deaths} \\
+\text{Assists} \\
+\vdots \\
+\text{Weaken Duration}
+\end{bmatrix}
+
+% 2. Model the win probability (TMP) as a logistic function of the features.
+\text{TMP}(t) = \hat{y}(t) = \sigma\Big( \mathbf{w}^\top \mathbf{X}(t) + b \Big)
+\quad \text{with} \quad
+\sigma(z) = \frac{1}{1 + e^{-z}}
+
+% 3. Interpret the rate of change in TMP as an indicator of in-game momentum shifts.
+\frac{d}{dt}\text{TMP}(t) \;>\; 0 \quad \Longrightarrow \quad \text{Team performance is improving}
+\\[6mm]
+\frac{d}{dt}\text{TMP}(t) \;<\; 0 \quad \Longrightarrow \quad \text{Team performance is declining}
+
+% 4. Game outcome timing when reaching a decisive win probability threshold.
+\text{If } \text{TMP}(t) \geq 0.9, \text{ then define the expected time to game closure as:}
+\\[3mm]
+T_{\text{end}} = t + \Delta t \quad \text{with} \quad
+\Delta t = \begin{cases}
+10, & \text{if the team is consolidating its win (closing out)} \\
+7, & \text{if the team is throwing the game (losing momentum)}
+\end{cases}
+
+% 5. Express the dynamic update of TMP as a function of game events.
+\text{TMP}(t+\Delta t) = \text{TMP}(t) + \eta(t)
+\quad \text{where } \eta(t) \text{ represents the net effect of in-game events (team fights, tactics, etc.)}
+
