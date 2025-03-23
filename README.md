@@ -1,6 +1,7 @@
 # Data of the Ancients 2 (DATA2) (WIP)
 
-![image](https://github.com/user-attachments/assets/9bba6ac2-8678-4ee1-b9ca-fc6aa2b3bb87)
+![image](https://github.com/user-attachments/assets/c4723bf6-f5d9-4420-801c-dd76f164ad69)
+
 
 Lead: Devinda S (Tony Todd)
 Analytics: Dayan S (dogg)
