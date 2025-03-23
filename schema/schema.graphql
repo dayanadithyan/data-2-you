@@ -1,0 +1,123 @@
+# --------------- schema.graphql ---------------
+type Query {
+  heroMetaTimeline(
+    heroId: ID!
+    resolution: TimeResolution = PATCH
+    patchRange: PatchRangeInput
+  ): [HeroMetaSnapshot!]!
+
+  matchPowerAnalysis(matchId: ID!): MatchPowerProfile!
+}
+
+type Mutation {
+  calculateOptimalBuild(
+    heroId: ID!
+    constraints: BuildConstraintsInput!
+  ): OptimalBuildResult!
+}
+
+type Subscription {
+  liveMatchMetrics(matchId: ID!): LiveMatchMetrics!
+}
+
+# --------------- Types ---------------
+type HeroMetaSnapshot {
+  timestamp: DateTime!
+  patchVersion: String!
+  overallWinRate: Float!
+  positions: [PositionMetrics!]!
+  itemBuilds: [HeroItemBuild!]!
+  skillPriorities: [SkillPriority!]!
+}
+
+type PositionMetrics {
+  position: MatchPosition!
+  pickRate: Float!
+  winRate: Float!
+  goldPerMin: Float!
+  expPerMin: Float!
+}
+
+type HeroItemBuild {
+  itemId: ID!
+  winRate: Float!
+  purchaseTiming: Float!
+  matches: Int!
+  synergyItems: [ItemSynergy!]!
+}
+
+type ItemSynergy {
+  itemId: ID!
+  synergyScore: Float!
+}
+
+type SkillPriority {
+  abilityId: ID!
+  priorityScore: Float!
+}
+
+type MatchPowerProfile {
+  matchId: ID!
+  significantSpikes: [PowerSpike!]!
+  objectiveTimeline: [ObjectiveEvent!]!
+  teamSynergy: TeamSynergyScore!
+}
+
+type PowerSpike {
+  timeWindow: String!
+  team: MatchFaction!
+  advantageType: AdvantageType!
+  magnitude: Float!
+}
+
+type TeamSynergyScore {
+  radiant: Float!
+  dire: Float!
+  heroCombinations: [HeroSynergyPair!]!
+}
+
+type HeroSynergyPair {
+  hero1: ID!
+  hero2: ID!
+  winRate: Float!
+}
+
+type LiveMatchMetrics {
+  netWorthAdvantage: Float!
+  experienceAdvantage: Float!
+  keyCooldowns: [AbilityCooldown!]!
+  predictedOutcome: PredictionConfidence!
+}
+
+# --------------- Inputs/Enums ---------------
+input PatchRangeInput {
+  start: String!
+  end: String!
+}
+
+input BuildConstraintsInput {
+  maxCost: Int
+  requiredTimings: [String!]
+  forbiddenItems: [ID!]
+}
+
+enum TimeResolution {
+  DAILY
+  WEEKLY
+  PATCH
+}
+
+enum MatchPosition {
+  POSITION_1
+  POSITION_2
+  POSITION_3
+  POSITION_4
+  POSITION_5
+}
+
+enum AdvantageType {
+  GOLD
+  EXPERIENCE
+  MAP_CONTROL
+  OBJECTIVE
+}
