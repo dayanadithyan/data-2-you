@@ -3,8 +3,8 @@
 ![image](https://github.com/user-attachments/assets/c4723bf6-f5d9-4420-801c-dd76f164ad69)
 
 
-Lead: Devinda S (Tony Todd)
-Analytics: Dayan S (dogg)
+> Lead: Devinda S (Tony Todd)
+> Analytics: Dayan S (dogg)
 - Please hit us up on steam if you wanna work together, this is not closed
 
 Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
@@ -15,7 +15,7 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
 
 - (WIP) DATA2 is an analytics platform that parses and disaggregates Dota 2 match data to allow for analysis beyond limits. Your only limit is creativity. Designed for competitive players, coaches, and analysts seeking evidence-based strategy optimization.
 
-- Inspired by STRATZ AI: The IMP-ire Strikes Back and Devinda's fantasy league obsession.
+- Inspired by STRATZ AI: The IMP-ire Strikes Back, Devinda's fantasy league obsession, and Hawkie's [brilliant tools](https://github.com/VirenDias?tab=repositories) for the global D2 fantasy league
 
 - Our thesis is to use interrupted-time-series analysis to create metrics to better understand the game. As the game has grown exponentially in difficulty, data must start to play an even larger role in understanding its beauty. 
 
