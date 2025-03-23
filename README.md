@@ -1,5 +1,11 @@
 # Data of the Ancients 2 (DATA2) (WIP)
 
+![image](https://github.com/user-attachments/assets/9bba6ac2-8678-4ee1-b9ca-fc6aa2b3bb87)
+
+Lead: Devinda S (Tony Todd)
+Analytics: Dayan S (dogg)
+- Please hit us up on steam if you wanna work together, this is not closed
+
 Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
@@ -14,12 +20,13 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
 
 - By gamers, for gamers. Reach out to contribute, this is for the community.
 
-## Key Features (WIP): What we ideally want to get to as an MVP (at minimal)  
+## Key Features we want to build (WIP): What we ideally want to get to as an MVP (at minimal)  
 
+- **Research on what metrics might be useful**: Words are power, we have more data than we know what to do with, so much time will be spent on what we could look at, but of course, this is iterative
 - **Temporal Meta Analysis**: Track hero, item, and other key metric performance across game versions, incl. hypothesis testing for meta shifts.  
 - **Power Spike Detection**: Identify critical match moments with statistical significance.  
 - **Creative**: Pass the data into even a graph database (Neo4J) to allow for even more fun analysis  
-- **AI (lmao)**: Because nothing is complete without a pointless use of an LLM  
+- **Knowlege graph (neo4J**: To run RAG for fast queries, identify unexpected relationships, using graph algorithms. Connect across any kind of variable in the schema
 
 ### Examples (Illustrative for POC, not fully functional)
 
