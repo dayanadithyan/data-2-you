@@ -29,6 +29,23 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
 - **Creative**: Pass the data into even a graph database (Neo4J) to allow for even more fun analysis  
 - **Knowlege graph (neo4J**: To run RAG for fast queries, identify unexpected relationships, using graph algorithms. Connect across any kind of variable in the schema
 
+## Even more TO DO
+Data Format Standardization: The most crucial step is to define a consistent data format for your Dota 2 match data. This will make it much easier to write generic analysis functions.
+
+Data Cleaning and Preprocessing: Implement robust data cleaning and preprocessing steps to handle missing values, incorrect data types, and outliers.
+
+Feature Engineering
+
+More Sophisticated Power Spike Detection: Implement more advanced power spike detection algorithms. 
+
+Statistical Testing: identifying meta shifts. Consider using techniques like t-tests, ANOVA, or chi-squared tests.
+
+Neo4j Integration: Design a schema for your Neo4j graph database and implement the code to load data from your Dota 2 match data into the graph. Explore graph algorithms for relationship discovery. Look into using RAG to efficiently query the database, and use knowledge graph for better searching data.
+
+Iterative Development: Start with a small set of features and gradually add more as you get feedback from users. Focus on building a solid foundation and then iterate.
+
+Community Feedback: Actively solicit feedback from the Dota 2 community to ensure that your platform is meeting their needs.
+
 ### Examples (Illustrative for POC, not fully functional)
 
 #### Retrieve hero meta evolution
