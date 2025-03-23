@@ -30,26 +30,6 @@ Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
 - **Knowlege graph (neo4J**: To run RAG for fast queries, identify unexpected relationships, using graph algorithms. Connect across any kind of variable in the schema
 
 ## Even more TO DO
-Data Format Standardization: The most crucial step is to define a consistent data format for your Dota 2 match data. This will make it much easier to write generic analysis functions.
-
-Data Cleaning and Preprocessing: Implement robust data cleaning and preprocessing steps to handle missing values, incorrect data types, and outliers.
-
-Example using generic names```
-frequency_table <- table(secondary_data$date_column)
-frequency_df <- data.frame(frequency_table)
-colnames(frequency_df) <- c("date", "frequency")
-frequency_df$date <- as.Date(frequency_df$date)```
-
-# Insert missing dates```
-all_dates <- seq(min(frequency_df$date), max(frequency_df$date), by="day")
-missing_dates_df <- data.frame(date = all_dates, frequency = 0)```
-
-# Merge the dataframes
-merged_frequency_df <- merge(frequency_df, missing_dates_df, by="date", all=TRUE)
-merged_frequency_df$frequency <- ifelse(is.na(merged_frequency_df$frequency.x),
-                                       merged_frequency_df$frequency.y,
-                                       merged_frequency_df$frequency.x)
-final_frequency_df <- merged_frequency_df[, c("date", "frequency")]
 
 Feature Engineering
 
