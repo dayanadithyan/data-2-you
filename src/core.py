@@ -1,67 +1,58 @@
-
-# --------------- database/core.py ---------------
-from typing import AsyncContextManager
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import sessionmaker
-
-class Database:
-    def __init__(self, dsn: str):
-        self.engine = create_async_engine(dsn)
-        self.session_factory = sessionmaker(
-            self.engine, class_=AsyncSession, expire_on_commit=False
-        )
-
-    @asynccontextmanager
-    async def session(self) -> AsyncContextManager[AsyncSession]:
-        async with self.session_factory() as session:
-            try:
-                yield session
-                await session.commit()
-            except Exception:
-                await session.rollback()
-                raise
-
-# --------------- main.py ---------------
-import os
-from dotenv import load_dotenv
-from fastapi import FastAPI, Depends
-
-load_dotenv()
-
-app = FastAPI()
-
-async def get_db():
-    db = Database(os.getenv("DB_DSN"))
+# Dependency for analytics engine
+async def get_analytics_engine(
+    db: Database = Depends(get_db),
+    redis: aioredis.Redis = Depends(get_redis)
+) -> AnalyticsEngine:
+    """Dependency to get analytics engine with database and Redis connections."""
     try:
-        yield db
-    finally:
-        await db.engine.dispose()
-
-async def get_redis():
-    redis = aioredis.from_url(os.getenv("REDIS_URL"))
-    try:
-        yield redis
-    finally:
-        await redis.close()
+        return AnalyticsEngine(db, redis)
+    except Exception as e:
+        logger.error(f"Analytics engine initialization error: {e}")
+        raise HTTPException(status_code=500, detail="Analytics engine initialization error")
 
 @app.get("/hero/{hero_id}/timeline")
 async def get_hero_timeline(
     hero_id: int,
     resolution: TimeResolution = TimeResolution.PATCH,
-    db: Database = Depends(get_db),
-    redis: aioredis.Redis = Depends(get_redis)
+    analytics_engine: AnalyticsEngine = Depends(get_analytics_engine)
 ):
-    engine = AnalyticsEngine(db, redis)
-    return await engine.get_hero_timeline(hero_id, resolution)
+    """Get a hero's performance timeline."""
+    try:
+        return await analytics_engine.get_hero_timeline(hero_id, resolution)
+    except Exception as e:
+        logger.error(f"Error fetching hero timeline: {e}")
+        raise HTTPException(status_code=500, detail=f"Error fetching hero timeline: {str(e)}")
 
 @app.get("/analysis/patch-impact")
 async def patch_impact_analysis(
     hero_id: int,
     base_patch: str,
     target_patch: str,
-    engine: AnalyticsEngine = Depends(AnalyticsEngine)
+    analytics_engine: AnalyticsEngine = Depends(get_analytics_engine)
 ):
-    return await engine.calculate_patch_impact(hero_id, base_patch, target_patch)
+    """Analyze the impact of a patch on a hero's performance."""
+    try:
+        return await analytics_engine.calculate_patch_impact(hero_id, base_patch, target_patch)
+    except Exception as e:
+        logger.error(f"Error analyzing patch impact: {e}")
+        raise HTTPException(status_code=500, detail=f"Error analyzing patch impact: {str(e)}")
+
+# Add GraphQL endpoint
+from strawberry.fastapi import GraphQLRouter
+from .schema.schema import schema
+
+graphql_app = GraphQLRouter(
+    schema=schema,
+    graphiql=True  # Enable GraphiQL interface for development
+)
+
+app.include_router(graphql_app, prefix="/graphql")
+
+# Health check endpoint
+@app.get("/health")
+async def health_check():
+    """Health check endpoint."""
+    return {"status": "ok"}
 
 if __name__ == "__main__":
     import uvicorn
