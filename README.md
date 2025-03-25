@@ -1,230 +1,133 @@
 # Data of the Ancients 2 (DATA2) (WIP)
+# DATA2: Data of the Ancients 2
 
-![image](https://github.com/user-attachments/assets/c4723bf6-f5d9-4420-801c-dd76f164ad69)
-
-
-> Lead: Devinda S (Tony Todd)
-> Analytics: Dayan S (dogg)
-- Please hit us up on steam if you wanna work together, this is not closed
-
-Advanced analytical engine for Dota 2 strategy optimization and meta-analysis
-
-![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+> **Lead**: Devinda S (Tony Todd)  
+> **Analytics**: Dayan S (dogg)
 
 ## Project Overview
 
-- (WIP) DATA2 is an analytics platform that parses and disaggregates Dota 2 match data to allow for analysis beyond limits. Your only limit is creativity. Designed for competitive players, coaches, and analysts seeking evidence-based strategy optimization.
+DATA2 (Data of the Ancients 2) is an advanced analytical engine designed for Dota 2 strategy optimization and meta-analysis. The platform parses and disaggregates match data to enable sophisticated analysis beyond conventional limits.
 
-- Inspired by STRATZ AI: The IMP-ire Strikes Back, Devinda's fantasy league obsession, and Hawkie's [brilliant tools](https://github.com/VirenDias?tab=repositories) for the global D2 fantasy league
+This project applies statistical methods, particularly interrupted time-series analysis, to create metrics that better understand the game's complexity. As Dota 2 has grown exponentially in difficulty, data-driven approaches become increasingly valuable for understanding strategic nuances.
 
-- Our thesis is to use interrupted-time-series analysis to create metrics to better understand the game. As the game has grown exponentially in difficulty, data must start to play an even larger role in understanding its beauty. 
+## Minimum Viable Product (MVP)
 
-- By gamers, for gamers. Reach out to contribute, this is for the community.
+Our MVP aims to deliver:
 
-## Key Features we want to build (WIP): What we ideally want to get to as an MVP (at minimal)  
+1. **Temporal Meta Analysis**: Track hero, item, and key metric performance across game versions with statistical significance testing for meta shifts.
 
-- **Research on what metrics might be useful**: Words are power, we have more data than we know what to do with, so much time will be spent on what we could look at, but of course, this is iterative
-- **Temporal Meta Analysis**: Track hero, item, and other key metric performance across game versions, incl. hypothesis testing for meta shifts.  
-- **Power Spike Detection**: Identify critical match moments with statistical significance.  
-- **Creative**: Pass the data into even a graph database (Neo4J) to allow for even more fun analysis  
-- **Knowlege graph (neo4J**: To run RAG for fast queries, identify unexpected relationships, using graph algorithms. Connect across any kind of variable in the schema
+2. **Power Spike Detection**: Identify critical match moments through statistical analysis of game state variables.
 
-## Even more TO DO
-Data Format Standardization: The most crucial step is to define a consistent data format for your Dota 2 match data. This will make it much easier to write generic analysis functions.
+3. **Knowledge Graph Integration**: Implement a Neo4J graph database to discover unexpected relationships between game variables and support Retrieval-Augmented Generation (RAG) for rapid queries.
 
-Data Cleaning and Preprocessing: Implement robust data cleaning and preprocessing steps to handle missing values, incorrect data types, and outliers.
+4. **Research Framework**: Develop a structured approach to identify which metrics provide the most strategic value from the wealth of available data.
 
-Example using generic names```
-frequency_table <- table(secondary_data$date_column)
-frequency_df <- data.frame(frequency_table)
-colnames(frequency_df) <- c("date", "frequency")
-frequency_df$date <- as.Date(frequency_df$date)```
+5. **API-to-Neo4j Pipeline**: Automated extraction, transformation, and loading of Dota 2 match data from API sources directly into a Neo4j graph database for relationship analysis and pattern detection.
 
-# Insert missing dates```
-all_dates <- seq(min(frequency_df$date), max(frequency_df$date), by="day")
-missing_dates_df <- data.frame(date = all_dates, frequency = 0)```
+## Technical Implementation
 
-# Merge the dataframes
-merged_frequency_df <- merge(frequency_df, missing_dates_df, by="date", all=TRUE)
-merged_frequency_df$frequency <- ifelse(is.na(merged_frequency_df$frequency.x),
-                                       merged_frequency_df$frequency.y,
-                                       merged_frequency_df$frequency.x)
-final_frequency_df <- merged_frequency_df[, c("date", "frequency")]
+The platform implements:
 
-Feature Engineering
+- **Data Schema**: Comprehensive GraphQL schema defining heroes, matches, items, abilities, and their relationships.
 
-More Sophisticated Power Spike Detection: Implement more advanced power spike detection algorithms. 
+- **Analytics Engine**: Mathematical models for win probability and momentum prediction, including:
+  - Team Match Performance (TMP) modeling using logistic functions
+  - Game-theoretic frameworks for momentum shift analysis
+  - Statistical validation of meta changes
 
-Statistical Testing: identifying meta shifts. Consider using techniques like t-tests, ANOVA, or chi-squared tests.
+- **Backend Architecture**: Python-based system with:
+  - SQLAlchemy for database operations
+  - FastAPI for API endpoint management
+  - Redis for caching
+  - Neo4j driver for graph database operations
 
-Neo4j Integration: Design a schema for your Neo4j graph database and implement the code to load data from your Dota 2 match data into the graph. Explore graph algorithms for relationship discovery. Look into using RAG to efficiently query the database, and use knowledge graph for better searching data.
+- **Data Pipeline**: Robust ETL process to transform API data into graph structures:
+  - Automated extraction from Dota 2 API endpoints
+  - Transformation of relational data into graph-optimized structures
+  - Incremental loading to maintain database efficiency
 
-Iterative Development: Start with a small set of features and gradually add more as you get feedback from users. Focus on building a solid foundation and then iterate.
+## Graph Data Model
 
-Community Feedback: Actively solicit feedback from the Dota 2 community to ensure that your platform is meeting their needs.
+The Neo4j graph implementation enables:
 
-### Examples (Illustrative for POC, not fully functional)
+1. **Entity Relationships**: Modeling of complex relationships between heroes, items, players, matches, and game events.
 
-#### Retrieve hero meta evolution
+2. **Temporal Analysis**: Tracking relationship changes across game versions and meta shifts.
 
-```graphql
-query HeroTimeline($heroId: ID!) {
-    heroMetaTimeline(heroId: $heroId) {
-        timestamp
-        patchVersion
-        positions {
-            position
-            pickRate
-            winRate
-        }
-    }
-}
+3. **Pattern Detection**: Using graph algorithms to identify winning combinations, counter strategies, and optimal team compositions.
+
+4. **Knowledge Querying**: Supporting natural language queries through graph-enhanced retrieval augmented generation.
+
+## Mathematical Approach
+
+The project applies rigorous mathematical modeling:
+
+- Feature vector extraction from game state variables
+- Logistic regression for win probability estimation
+- Time-derivative analysis for momentum shifts
+- Statistical hypothesis testing for meta analysis
+- Graph centrality metrics for identifying key relationship nodes
+
+## Development Roadmap
+
+1. **Core Feature Engineering**: Implement basic metrics and analysis framework
+2. **Advanced Spike Detection**: Develop sophisticated algorithms for power spike identification
+3. **Statistical Testing**: Implement robust methods for identifying meta shifts
+4. **Database Integration**: Connect Neo4j for graph-based relationship discovery
+5. **API Pipeline Implementation**: Build automated data extraction and transformation processes
+6. **Graph Schema Optimization**: Refine Neo4j data model for analytical performance
+7. **Community Feedback Loop**: Establish mechanisms for user input to guide feature development
+
+## Illustrative Example: Hero Synergy Analysis
+
+Here's how DATA2 would work in practice for a hero synergy analysis:
+
+```
+1. Data Ingestion:
+   - The system polls the Dota 2 API for recent match data
+   - Match details including hero picks, item purchases, and game events are captured
+
+2. Neo4j Graph Creation:
+   - Heroes become nodes with properties (e.g., strength, agility, intelligence)
+   - Matches become nodes with properties (e.g., duration, winner)
+   - Relationships are created:
+     (Hero)-[:PICKED_IN]->(Match)
+     (Hero)-[:PLAYED_WITH]->(Hero)
+     (Hero)-[:PURCHASED]->(Item)
+
+3. Analysis Query:
+   MATCH (h1:Hero)-[:PICKED_IN]->(m:Match)<-[:PICKED_IN]-(h2:Hero)
+   WHERE h1.id = 1 AND m.is_victory = true AND h1.team = h2.team
+   RETURN h2.name, count(*) as games, avg(m.duration) as avg_duration
+   ORDER BY games DESC
+   LIMIT 5
+
+4. Insight Generation:
+   - System identifies that Hero 1 (e.g., Crystal Maiden) has highest win rate when paired with Hero 23 (e.g., Juggernaut)
+   - Power spike detection shows this combo is strongest at 15-25 minute mark
+   - Meta analysis reveals this synergy became prominent in patch 7.32
 ```
 
-#### Generate optimal item build
+Using the TMP model, the system can further analyze:
 
-```graphql
-mutation OptimizeBuild($heroId: ID!, $constraints: BuildConstraints!) {
-    calculateOptimalBuild(heroId: $heroId, constraints: $constraints) {
-        items
-        expectedWinRate
-        timingEfficiency
-    }
-}
+```
+TMP(t) = σ(w⊤X(t) + b)
+
+Where X(t) = [Game Time, Net Kills, Gold Advantage, Towers Destroyed, Roshan Kills, ...]
+
+For the Crystal Maiden + Juggernaut combo, the model detects:
+- d/dt TMP(t) shows significant positive spike after CM reaches level 6
+- Win probability increases by 15% when Juggernaut builds BKB before 18 minutes
 ```
 
-#### Get hero meta evolution
+This analysis provides actionable intelligence for team composition and strategic timing decisions.
 
-```graphql
-query HeroTimeline($heroId: ID!) {
-    heroMetaTimeline(heroId: $heroId) {
-        timestamp
-        patchVersion
-        overallWinRate
-    }
-}
-```
+## Contribution
 
-#### Optimize hero build
+This is an open community project. Please reach out via Steam if you're interested in contributing. We welcome developers, analysts, and Dota 2 enthusiasts who want to bring data science to the game.
 
-```graphql
-mutation OptimizeBuild($heroId: ID!, $constraints: BuildConstraints!) {
-    calculateOptimalBuild(heroId: $heroId, constraints: $constraints) {
-        items
-        expectedWinRate
-    }
-}
-```
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 
-### Current thinking, how can we get here? Right now, that answer is as open as it has ever been, example—
+## License
 
-#### Define the feature vector from the game state (using the 27 variables, abbreviated)
-
-$$
-\mathbf{X}(t) = \begin{bmatrix}
-\text{Game Time} \\
-\text{Kills} \\
-\text{Deaths} \\
-\text{Assists} \\
-\vdots \\
-\text{Weaken Duration}
-\end{bmatrix}
-$$
-
-#### Model the win probability (TMP) as a logistic function of the features.
-
-$$
-\text{TMP}(t) = \hat{y}(t) = \sigma\Big( \mathbf{w}^\top \mathbf{X}(t) + b \Big) \quad \text{with} \quad \sigma(z) = \frac{1}{1 + e^{-z}}
-$$
-
-#### Interpret the rate of change in TMP as an indicator of in-game momentum shifts.
-
-$$
-\frac{d}{dt}\text{TMP}(t) > 0 \quad \Longrightarrow \quad \text{Team performance is improving}
-$$
-
-$$
-\frac{d}{dt}\text{TMP}(t) < 0 \quad \Longrightarrow \quad \text{Team performance is declining}
-$$
-
-#### Game outcome timing when reaching a decisive win probability threshold.
-
-$$
-\text{If } \text{TMP}(t) \geq 0.9, \text{ then define the expected time to game closure as:}
-$$
-
-$$
-T_{\text{end}} = t + \Delta t \quad \text{with} \quad \Delta t = \begin{cases}
-10, & \text{if the team is consolidating its win (closing out)} \\
-7, & \text{if the team is throwing the game (losing momentum)}
-\end{cases}
-$$
-
-#### Express the dynamic update of TMP as a function of game events.
-
-$$
-\text{TMP}(t+\Delta t) = \text{TMP}(t) + \eta(t) \quad \text{where } \eta(t) \text{ represents the net effect of in-game events (team fights, tactics, etc.)}
-$$
-
-### Game-Theoretic TMP for Dota 2
-
-Extending the TMP model with Dota 2-specific game theory for strategic insights:
-
-#### Redefine the feature vector for Dota 2 (using 9 key variables, abbreviated)
-
-$$
-\mathbf{X}(t) = \begin{bmatrix}
-\text{Game Time (min)} \\
-\text{Net Kills (Kills - Deaths)} \\
-\text{Assists} \\
-\text{Gold Advantage (k)} \\
-\text{Towers Destroyed} \\
-\text{Roshan Kills} \\
-\text{Ward Placements} \\
-\text{Courier Kills} \\
-\text{Buybacks Used}
-\end{bmatrix}
-$$
-
-#### Model TMP as Radiant's win probability, a logistic function reflecting strategic payoffs.
-
-$$
-\text{TMP}(t) = \hat{y}(t) = \sigma\Big( \mathbf{w}^\top \mathbf{X}(t) + b \Big) \quad \text{with} \quad \sigma(z) = \frac{1}{1 + e^{-z}}
-$$
-
-Dire's payoff is 
-
-$$
-1 - \text{TMP}(t)
-$$
-
-framing a two-team game.
-
-#### Interpret momentum shifts as strategic outcomes in Dota 2.
-
-$$
-\frac{d}{dt}\text{TMP}(t) > 0 \quad \Longrightarrow \quad \text{Radiant gaining edge (e.g., Aegis secured)}
-$$
-
-$$
-\frac{d}{dt}\text{TMP}(t) < 0 \quad \Longrightarrow \quad \text{Dire fighting back (e.g., smoke gank)}
-$$
-
-#### Define game closure timing with Dota-specific thresholds.
-
-$$
-\text{If } \text{TMP}(t) \geq 0.9, \text{ then define the expected time to throne as:}
-$$
-
-$$
-T_{\text{end}} = t + \Delta t \quad \text{with} \quad \Delta t = \begin{cases}
-8, & \text{if Radiant pushes with Aegis advantage} \\
-5, & \text{if Radiant throws at high ground}
-\end{cases}
-$$
-
-#### Express the dynamic update of TMP with Dota events as strategic moves.
-
-$$
-\text{TMP}(t+\Delta t) = \text{TMP}(t) + \eta(t) \quad \text{where } \eta(t) \text{ captures events (team fights, Roshan contests, etc.)}
-$$
+Custom evaluation license - see LICENSE file for details.
