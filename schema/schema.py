@@ -5,6 +5,7 @@ from typing import List, Optional, AsyncGenerator
 
 @strawberry.type
 class PositionMetrics:
+    """Metrics for a hero in a specific position."""
     position: str
     pick_rate: float
     win_rate: float
@@ -13,11 +14,13 @@ class PositionMetrics:
 
 @strawberry.type
 class ItemSynergy:
+    """Synergy between items for a specific hero."""
     item_id: int
     synergy_score: float
 
 @strawberry.type
 class HeroItemBuild:
+    """Item build information for a hero."""
     item_id: int
     win_rate: float
     purchase_timing: float
@@ -26,6 +29,7 @@ class HeroItemBuild:
 
 @strawberry.type
 class SkillPriority:
+    """Priority scores for hero abilities."""
     ability_id: int
     priority_score: float
 
