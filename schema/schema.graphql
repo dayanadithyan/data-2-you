@@ -1,8 +1,8 @@
 # --------------- schema.graphql ---------------
 type Query {
   heroMetaTimeline(
-    heroId: ID!
-    resolution: TimeResolution = PATCH
+    heroId: ID!,
+    resolution: TimeResolution = PATCH,
     patchRange: PatchRangeInput
   ): [HeroMetaSnapshot!]!
 
@@ -11,7 +11,7 @@ type Query {
 
 type Mutation {
   calculateOptimalBuild(
-    heroId: ID!
+    heroId: ID!,
     constraints: BuildConstraintsInput!
   ): OptimalBuildResult!
 }
@@ -59,8 +59,8 @@ type SkillPriority {
 type MatchPowerProfile {
   matchId: ID!
   significantSpikes: [PowerSpike!]!
-  objectiveTimeline: [ObjectiveEvent!]!
-  teamSynergy: TeamSynergyScore!
+  objectiveTimeline: [String!]!
+  teamSynergy: Float!
 }
 
 type PowerSpike {
@@ -89,6 +89,24 @@ type LiveMatchMetrics {
   predictedOutcome: PredictionConfidence!
 }
 
+type AbilityCooldown {
+  heroId: ID!
+  abilityId: ID!
+  remainingCooldown: Float!
+}
+
+type PredictionConfidence {
+  radiantWinProbability: Float!
+  confidence: Float!
+}
+
+type ObjectiveEvent {
+  time: Int!
+  type: ObjectiveType!
+  team: MatchFaction!
+  description: String
+}
+
 # --------------- Inputs/Enums ---------------
 input PatchRangeInput {
   start: String!
@@ -115,9 +133,25 @@ enum MatchPosition {
   POSITION_5
 }
 
+enum MatchFaction {
+  RADIANT
+  DIRE
+}
+
 enum AdvantageType {
   GOLD
   EXPERIENCE
   MAP_CONTROL
   OBJECTIVE
 }
+
+enum ObjectiveType {
+  TOWER
+  ROSHAN
+  BARRACKS
+  OUTPOST
+  TEAM_FIGHT
+}
+
+# Custom scalar for DateTime
+scalar DateTime
