@@ -98,7 +98,8 @@ class AnalyticsEngine:
                 i.interval_start AS timestamp,
                 p.version AS patch_version,
                 AVG(mh.win::int) AS win_rate,
-                ...
+                -- Additional fields would be here
+                COUNT(*) as match_count
             FROM intervals i
             LEFT JOIN matches m ON m.start_time >= i.interval_start
             LEFT JOIN match_heroes mh ON m.match_id = mh.match_id
@@ -117,14 +118,14 @@ class AnalyticsEngine:
 
     def _process_timeline_record(self, record) -> HeroMetaSnapshot:
         """Process a database record into a HeroMetaSnapshot."""
-        # Implementation of complex data processing
+        # Implementation of data processing
         return HeroMetaSnapshot(
             timestamp=record["timestamp"],
             patch_version=record["patch_version"],
             overall_win_rate=record["win_rate"],
-            positions=[],
-            item_builds=[],
-            skill_priorities=[]
+            positions=[],  # Would be populated from actual data
+            item_builds=[],  # Would be populated from actual data
+            skill_priorities=[]  # Would be populated from actual data
         )
 
     async def calculate_patch_impact(
@@ -160,13 +161,13 @@ class AnalyticsEngine:
                 "significant": False
             }
 
+        base_win_rate = base_wins / base_total
+        target_win_rate = target_wins / target_total
+        
         z_score, p_value = stats.proportions_ztest(
             [base_wins, target_wins],
             [base_total, target_total]
         )
-        
-        base_win_rate = base_wins / base_total if base_total > 0 else 0
-        target_win_rate = target_wins / target_total if target_total > 0 else 0
         
         return {
             "hero_id": hero_id,
@@ -176,7 +177,7 @@ class AnalyticsEngine:
             "confidence_interval": stats.norm.interval(confidence_level)[1] * np.sqrt(
                 (base_win_rate * (1 - base_win_rate)) / base_total +
                 (target_win_rate * (1 - target_win_rate)) / target_total
-            ) if base_total > 0 and target_total > 0 else 0,
+            ),
             "p_value": p_value,
             "significant": p_value < (1 - confidence_level)
         }
