@@ -7,17 +7,20 @@
 @prefix meta:  <http://example.org/meta#> .
 
 #################################################################
-# Ontology Declaration
+#                     ONTOLOGY DECLARATION                      #
 #################################################################
+
 dota2:Dota2Ontology a owl:Ontology ;
     owl:versionInfo "Version 1.1 - Data-centric ontology for Dota 2" ;
     rdfs:comment "An ontology modeling Dota 2 entities (Heroes, Abilities, Items, Matches, Players, Builds, Drafts) with performance metrics from STRATZ, dotabuff, and Valve." .
 
 #################################################################
-# Class Declarations
+#                       CLASS HIERARCHY                         #
 #################################################################
 
-### Core Game Entities
+### 1. GAME ENTITY CLASSES ###
+
+# Primary game entities
 dota2:Hero a owl:Class ;
     rdfs:label "Hero" ;
     rdfs:comment "A playable character in Dota 2 with unique attributes, abilities, and performance statistics." .
@@ -30,24 +33,27 @@ dota2:Item a owl:Class ;
     rdfs:label "Item" ;
     rdfs:comment "An item purchasable in-game that provides stat bonuses or active effects." .
 
+# Match and draft entities
 dota2:Match a owl:Class ;
     rdfs:label "Match" ;
     rdfs:comment "A single Dota 2 game instance with performance data and hero participation." .
-
-dota2:Player a owl:Class ;
-    rdfs:label "Player" ;
-    rdfs:comment "A player account participating in matches, with associated ratings and performance data." .
-
-### Extended Domain Entities
-dota2:Build a owl:Class ;
-    rdfs:label "Build" ;
-    rdfs:comment "A recommended item/skill build for a hero derived from aggregated statistical data." .
 
 dota2:Draft a owl:Class ;
     rdfs:label "Draft" ;
     rdfs:comment "Pre–game hero pick/ban data and counter–pick information." .
 
-### Team Enumeration
+# Player-related entities
+dota2:Player a owl:Class ;
+    rdfs:label "Player" ;
+    rdfs:comment "A player account participating in matches, with associated ratings and performance data." .
+
+dota2:Build a owl:Class ;
+    rdfs:label "Build" ;
+    rdfs:comment "A recommended item/skill build for a hero derived from aggregated statistical data." .
+
+### 2. ENUMERATION CLASSES ###
+
+# Team enumeration
 dota2:Team a owl:Class ;
     rdfs:label "Team" ;
     rdfs:comment "Represents either Radiant or Dire team in a match." .
@@ -60,7 +66,7 @@ dota2:Dire a dota2:Team ;
     rdfs:label "Dire" ;
     rdfs:comment "The Dire team." .
 
-### Attribute Enumeration
+# Attribute enumeration
 dota2:Attribute a owl:Class ;
     rdfs:label "Attribute" ;
     rdfs:comment "The primary attributes in Dota 2." .
@@ -78,16 +84,62 @@ dota2:Intelligence a dota2:Attribute ;
     rdfs:comment "Intelligence attribute." .
 
 #################################################################
-# Data Property Declarations
+#                    PROPERTY DECLARATIONS                      #
 #################################################################
 
-### Hero Properties
-dota2:heroName a owl:DatatypeProperty ;
+### 1. IDENTITY PROPERTIES ###
+
+# Hero identity
+dota2:heroName a owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range xsd:string ;
     rdfs:label "heroName" ;
     rdfs:comment "The name of the hero." .
 
+# Ability identity
+dota2:abilityName a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Ability ;
+    rdfs:range xsd:string ;
+    rdfs:label "abilityName" ;
+    rdfs:comment "The name of the ability." .
+
+# Item identity
+dota2:itemName a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Item ;
+    rdfs:range xsd:string ;
+    rdfs:label "itemName" ;
+    rdfs:comment "The name of the item." .
+
+# Match identity
+dota2:matchID a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Match ;
+    rdfs:range xsd:string ;
+    rdfs:label "matchID" ;
+    rdfs:comment "Unique identifier for the match." .
+
+# Player identity
+dota2:playerID a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Player ;
+    rdfs:range xsd:string ;
+    rdfs:label "playerID" ;
+    rdfs:comment "Unique identifier for a player account." .
+
+dota2:playerName a owl:DatatypeProperty ;
+    rdfs:domain dota2:Player ;
+    rdfs:range xsd:string ;
+    rdfs:label "playerName" ;
+    rdfs:comment "The display name of the player." .
+
+# Build identity
+dota2:buildName a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Build ;
+    rdfs:range xsd:string ;
+    rdfs:label "buildName" ;
+    rdfs:comment "The name or title of the build." .
+
+### 2. ATTRIBUTE PROPERTIES ###
+
+# Hero attributes
 dota2:primaryAttribute a owl:DatatypeProperty, owl:FunctionalProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range dota2:Attribute ;
@@ -106,25 +158,7 @@ stats:baseMana a owl:DatatypeProperty ;
     rdfs:label "baseMana" ;
     rdfs:comment "The base mana value of the hero." .
 
-stats:winRate a owl:DatatypeProperty ;
-    rdfs:domain dota2:Hero ;
-    rdfs:range xsd:float ;
-    rdfs:label "winRate" ;
-    rdfs:comment "The aggregated win rate of the hero." .
-
-stats:avgGPM a owl:DatatypeProperty ;
-    rdfs:domain dota2:Hero ;
-    rdfs:range xsd:integer ;
-    rdfs:label "avgGPM" ;
-    rdfs:comment "Average gold per minute for the hero." .
-
-### Ability Properties
-dota2:abilityName a owl:DatatypeProperty ;
-    rdfs:domain dota2:Ability ;
-    rdfs:range xsd:string ;
-    rdfs:label "abilityName" ;
-    rdfs:comment "The name of the ability." .
-
+# Ability attributes
 dota2:cooldown a owl:DatatypeProperty ;
     rdfs:domain dota2:Ability ;
     rdfs:range xsd:integer ;
@@ -137,32 +171,14 @@ dota2:manaCost a owl:DatatypeProperty ;
     rdfs:label "manaCost" ;
     rdfs:comment "Mana cost required to use the ability." .
 
-### Item Properties
-dota2:itemName a owl:DatatypeProperty ;
-    rdfs:domain dota2:Item ;
-    rdfs:range xsd:string ;
-    rdfs:label "itemName" ;
-    rdfs:comment "The name of the item." .
-
+# Item attributes
 dota2:cost a owl:DatatypeProperty ;
     rdfs:domain dota2:Item ;
     rdfs:range xsd:integer ;
     rdfs:label "cost" ;
     rdfs:comment "The purchase cost of the item in gold." .
 
-stats:usageRate a owl:DatatypeProperty ;
-    rdfs:domain dota2:Item ;
-    rdfs:range xsd:float ;
-    rdfs:label "usageRate" ;
-    rdfs:comment "Frequency of the item's purchase as derived from aggregated data." .
-
-### Match Properties
-dota2:matchID a owl:DatatypeProperty, owl:FunctionalProperty ;
-    rdfs:domain dota2:Match ;
-    rdfs:range xsd:string ;
-    rdfs:label "matchID" ;
-    rdfs:comment "Unique identifier for the match." .
-
+# Match attributes
 dota2:duration a owl:DatatypeProperty ;
     rdfs:domain dota2:Match ;
     rdfs:range xsd:integer ;
@@ -175,6 +191,43 @@ dota2:patchVersion a owl:DatatypeProperty ;
     rdfs:label "patchVersion" ;
     rdfs:comment "The game version/patch in which the match was played." .
 
+# Build attributes
+dota2:buildType a owl:DatatypeProperty ;
+    rdfs:domain dota2:Build ;
+    rdfs:range xsd:string ;
+    rdfs:label "buildType" ;
+    rdfs:comment "The type of build (e.g., 'Core', 'Support')." .
+
+# Draft attributes
+dota2:draftSequence a owl:DatatypeProperty ;
+    rdfs:domain dota2:Draft ;
+    rdfs:range xsd:string ;
+    rdfs:label "draftSequence" ;
+    rdfs:comment "The sequence of picks and bans in the draft." .
+
+### 3. STATISTICAL PROPERTIES ###
+
+# Hero statistics
+stats:winRate a owl:DatatypeProperty ;
+    rdfs:domain dota2:Hero ;
+    rdfs:range xsd:float ;
+    rdfs:label "winRate" ;
+    rdfs:comment "The aggregated win rate of the hero." .
+
+stats:avgGPM a owl:DatatypeProperty ;
+    rdfs:domain dota2:Hero ;
+    rdfs:range xsd:integer ;
+    rdfs:label "avgGPM" ;
+    rdfs:comment "Average gold per minute for the hero." .
+
+# Item statistics
+stats:usageRate a owl:DatatypeProperty ;
+    rdfs:domain dota2:Item ;
+    rdfs:range xsd:float ;
+    rdfs:label "usageRate" ;
+    rdfs:comment "Frequency of the item's purchase as derived from aggregated data." .
+
+# Match statistics
 stats:teamGoldRadiant a owl:DatatypeProperty ;
     rdfs:domain dota2:Match ;
     rdfs:range xsd:integer ;
@@ -199,67 +252,71 @@ stats:teamXPDire a owl:DatatypeProperty ;
     rdfs:label "teamXPDire" ;
     rdfs:comment "Total experience earned by the Dire team during the match." .
 
-### Player Properties
-dota2:playerID a owl:DatatypeProperty, owl:FunctionalProperty ;
-    rdfs:domain dota2:Player ;
-    rdfs:range xsd:string ;
-    rdfs:label "playerID" ;
-    rdfs:comment "Unique identifier for a player account." .
-
-dota2:playerName a owl:DatatypeProperty ;
-    rdfs:domain dota2:Player ;
-    rdfs:range xsd:string ;
-    rdfs:label "playerName" ;
-    rdfs:comment "The display name of the player." .
-
+# Player statistics
 stats:MMR a owl:DatatypeProperty ;
     rdfs:domain dota2:Player ;
     rdfs:range xsd:integer ;
     rdfs:label "MMR" ;
     rdfs:comment "Matchmaking Rating of the player." .
 
-### Build Properties
-dota2:buildName a owl:DatatypeProperty ;
-    rdfs:domain dota2:Build ;
-    rdfs:range xsd:string ;
-    rdfs:label "buildName" ;
-    rdfs:comment "The name or title of the build." .
-
-dota2:buildType a owl:DatatypeProperty ;
-    rdfs:domain dota2:Build ;
-    rdfs:range xsd:string ;
-    rdfs:label "buildType" ;
-    rdfs:comment "The type of build (e.g., 'Core', 'Support')." .
-
+# Build statistics
 stats:buildWinRate a owl:DatatypeProperty ;
     rdfs:domain dota2:Build ;
     rdfs:range xsd:float ;
     rdfs:label "buildWinRate" ;
     rdfs:comment "Win rate of matches using this build." .
 
-### Draft Properties
-dota2:draftSequence a owl:DatatypeProperty ;
-    rdfs:domain dota2:Draft ;
-    rdfs:range xsd:string ;
-    rdfs:label "draftSequence" ;
-    rdfs:comment "The sequence of picks and bans in the draft." .
-
 #################################################################
-# Object Property Declarations
+#                  RELATIONSHIP DECLARATIONS                    #
 #################################################################
 
+### 1. HERO RELATIONSHIPS ###
+
+# Hero-Ability relationships
 dota2:hasAbility a owl:ObjectProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range dota2:Ability ;
     rdfs:label "hasAbility" ;
     rdfs:comment "Relates a hero to its abilities." .
 
+# Hero-Item relationships
 dota2:hasItemRecommendation a owl:ObjectProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range dota2:Item ;
     rdfs:label "hasItemRecommendation" ;
     rdfs:comment "Links a hero with recommended items based on performance data." .
 
+# Hero-Build relationships
+dota2:recommendedBuild a owl:ObjectProperty ;
+    rdfs:domain dota2:Hero ;
+    rdfs:range dota2:Build ;
+    rdfs:label "recommendedBuild" ;
+    rdfs:comment "Links a hero to a recommended build derived from aggregated data." .
+
+dota2:buildForHero a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Build ;
+    rdfs:range dota2:Hero ;
+    owl:inverseOf dota2:recommendedBuild ;
+    rdfs:label "buildForHero" ;
+    rdfs:comment "Specifies which hero this build is for." .
+
+# Hero-Hero relationships
+dota2:counterPick a owl:ObjectProperty, owl:AsymmetricProperty ;
+    rdfs:domain dota2:Hero ;
+    rdfs:range dota2:Hero ;
+    rdfs:label "counterPick" ;
+    rdfs:comment "Represents a counter-pick relationship where one hero statistically outperforms another." .
+
+# Hero-Team relationships
+dota2:belongsToTeam a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Hero ;
+    rdfs:range dota2:Team ;
+    rdfs:label "belongsToTeam" ;
+    rdfs:comment "Indicates which team (Radiant or Dire) a hero belongs to in a specific match." .
+
+### 2. MATCH RELATIONSHIPS ###
+
+# Match-Hero relationships (bidirectional)
 dota2:participatesIn a owl:ObjectProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range dota2:Match ;
@@ -274,9 +331,20 @@ dota2:featuresHero a owl:ObjectProperty ;
     rdfs:label "featuresHero" ;
     rdfs:comment "Indicates that a match features a given hero." .
 
+# Match-Draft relationships
+dota2:draftBelongsToMatch a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain dota2:Draft ;
+    rdfs:range dota2:Match ;
+    rdfs:label "draftBelongsToMatch" ;
+    rdfs:comment "Associates a draft with its match." .
+
+### 3. PLAYER RELATIONSHIPS ###
+
+# Player-Hero relationships (bidirectional)
 dota2:playedBy a owl:ObjectProperty ;
     rdfs:domain dota2:Hero ;
     rdfs:range dota2:Player ;
+    owl:inverseOf dota2:playsHero ;
     rdfs:label "playedBy" ;
     rdfs:comment "Associates a hero with the player who played it in a match." .
 
@@ -287,6 +355,7 @@ dota2:playsHero a owl:ObjectProperty ;
     rdfs:label "playsHero" ;
     rdfs:comment "Relates a player to the hero they played in a match." .
 
+# Player-Match relationships (bidirectional)
 dota2:participatedIn a owl:ObjectProperty ;
     rdfs:domain dota2:Player ;
     rdfs:range dota2:Match ;
@@ -301,44 +370,23 @@ dota2:includedPlayer a owl:ObjectProperty ;
     rdfs:label "includedPlayer" ;
     rdfs:comment "Associates a match with players who participated." .
 
-dota2:recommendedBuild a owl:ObjectProperty ;
-    rdfs:domain dota2:Hero ;
-    rdfs:range dota2:Build ;
-    rdfs:label "recommendedBuild" ;
-    rdfs:comment "Links a hero to a recommended build (item/skill order) derived from aggregated data." .
+### 4. BUILD AND DRAFT RELATIONSHIPS ###
 
-dota2:counterPick a owl:ObjectProperty, owl:AsymmetricProperty ;
-    rdfs:domain dota2:Hero ;
-    rdfs:range dota2:Hero ;
-    rdfs:label "counterPick" ;
-    rdfs:comment "Represents a counter–pick relationship where one hero statistically outperforms another." .
-
-dota2:belongsToTeam a owl:ObjectProperty, owl:FunctionalProperty ;
-    rdfs:domain dota2:Hero ;
-    rdfs:range dota2:Team ;
-    rdfs:label "belongsToTeam" ;
-    rdfs:comment "Indicates which team (Radiant or Dire) a hero belongs to in a specific match." .
-
-### Build Related Properties
+# Build-Item relationships
 dota2:includesItem a owl:ObjectProperty ;
     rdfs:domain dota2:Build ;
     rdfs:range dota2:Item ;
     rdfs:label "includesItem" ;
     rdfs:comment "Indicates that a build includes a particular item." .
 
+# Build-Ability relationships
 dota2:includesAbility a owl:ObjectProperty ;
     rdfs:domain dota2:Build ;
     rdfs:range dota2:Ability ;
     rdfs:label "includesAbility" ;
     rdfs:comment "Indicates the ability order in a build." .
 
-dota2:buildForHero a owl:ObjectProperty, owl:FunctionalProperty ;
-    rdfs:domain dota2:Build ;
-    rdfs:range dota2:Hero ;
-    rdfs:label "buildForHero" ;
-    rdfs:comment "Specifies which hero this build is for." .
-
-### Draft Related Properties
+# Draft-Hero relationships
 dota2:hasPick a owl:ObjectProperty ;
     rdfs:domain dota2:Draft ;
     rdfs:range dota2:Hero ;
@@ -351,100 +399,35 @@ dota2:hasBan a owl:ObjectProperty ;
     rdfs:label "hasBan" ;
     rdfs:comment "Relates a draft to a hero that was banned." .
 
-dota2:draftBelongsToMatch a owl:ObjectProperty, owl:FunctionalProperty ;
-    rdfs:domain dota2:Draft ;
-    rdfs:range dota2:Match ;
-    rdfs:label "draftBelongsToMatch" ;
-    rdfs:comment "Associates a draft with its match." .
-
 #################################################################
-# Property Characteristics and Restrictions
+#                     SEMANTIC CONSTRAINTS                      #
 #################################################################
 
+# A match must have exactly 10 heroes (5 on each team)
 dota2:Match rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty dota2:featuresHero ;
-    owl:minCardinality "10"^^xsd:nonNegativeInteger
+    owl:cardinality "10"^^xsd:nonNegativeInteger
 ] .
 
+# A hero must have at least 4 abilities
 dota2:Hero rdfs:subClassOf [
     a owl:Restriction ;
     owl:onProperty dota2:hasAbility ;
     owl:minCardinality "4"^^xsd:nonNegativeInteger
 ] .
-#################################################################
-# Example Individuals
-#################################################################
 
-# Example Hero: Anti-Mage
-dota2:AntiMage_001 a dota2:Hero ;
-    dota2:heroName "Anti-Mage" ;
-    dota2:primaryAttribute "Agility" ;
-    stats:baseHealth 600 ;
-    stats:baseMana 300 ;
-    stats:winRate "0.53"^^xsd:float ;
-    stats:avgGPM 480 ;
-    meta:version "7.29" ;
-    meta:source <https://api.opendota.com> ;
-    dota2:hasAbility dota2:ManaBreak_001, dota2:SpellShield_001 .
+# A player in a match plays exactly one hero
+dota2:Player rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty dota2:playsHero ;
+    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onClass dota2:Hero
+] .
 
-# Abilities for Anti-Mage
-dota2:ManaBreak_001 a dota2:Ability ;
-    dota2:abilityName "Mana Break" ;
-    dota2:cooldown 10 ;
-    dota2:manaCost 30 ;
-    meta:source <https://api.opendota.com> .
-
-dota2:SpellShield_001 a dota2:Ability ;
-    dota2:abilityName "Spell Shield" ;
-    dota2:cooldown 0 ;
-    dota2:manaCost 0 ;
-    meta:source <https://api.opendota.com> .
-
-# Example Item: Radiance
-dota2:Radiance_001 a dota2:Item ;
-    dota2:itemName "Radiance" ;
-    dota2:cost 2200 ;
-    stats:usageRate "0.32"^^xsd:float ;
-    meta:source <https://www.dotabuff.com> .
-
-# Example Match
-dota2:Match_12345 a dota2:Match ;
-    dota2:matchID "12345" ;
-    dota2:duration 2500 ;
-    stats:teamGoldRadiant 18000 ;
-    stats:teamXPRadiant 22000 ;
-    meta:version "7.29" ;
-    meta:source <https://api.opendota.com> ;
-    dota2:featuresHero dota2:AntiMage_001 .
-
-# Example Player
-dota2:Player_Alpha a dota2:Player ;
-    dota2:playerID "Alpha123" ;
-    stats:MMR 4800 ;
-    meta:source <https://api.opendota.com> .
-
-# Example Build for a Carry hero
-dota2:Build_Carry_001 a dota2:Build ;
-    rdfs:label "Carry Build for Anti-Mage" ;
-    rdfs:comment "A recommended build based on STRATZ and dotabuff data." ;
-    meta:source <https://www.stratz.com> .
-
-# Link Anti-Mage to his recommended build
-dota2:AntiMage_001 dota2:recommendedBuild dota2:Build_Carry_001 .
-
-# Example Counter-Pick Relationship: Anti-Mage counters Crystal Maiden
-dota2:AntiMage_001 dota2:counterPick dota2:CrystalMaiden_001 .
-
-# Example Hero: Crystal Maiden
-dota2:CrystalMaiden_001 a dota2:Hero ;
-    dota2:heroName "Crystal Maiden" ;
-    dota2:primaryAttribute "Intelligence" ;
-    stats:baseHealth 500 ;
-    stats:baseMana 400 ;
-    meta:version "7.29" ;
-    meta:source <https://api.opendota.com> .
-
-#################################################################
-# End of Ontology
-#################################################################
+# Each team in a match has exactly 5 heroes
+dota2:Team rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty [owl:inverseOf dota2:belongsToTeam] ;
+    owl:cardinality "5"^^xsd:nonNegativeInteger
+] .
