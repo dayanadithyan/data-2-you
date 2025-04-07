@@ -1,4 +1,5 @@
 import statistics
+
 from sqlalchemy import case, create_engine, func, cast, Float
 from sqlalchemy.orm import sessionmaker
 from models import (
@@ -73,33 +74,32 @@ for hero, count in most_picked:
     print(f"{hero}: {count}")
 
 # Define the KDA expression with floating-point division
-# kda_expr = (
-#     (cast(MatchPlayers.kills, Float) + cast(MatchPlayers.assists, Float))
-#     /
-#     case(
-#         (MatchPlayers.deaths == 0, 1),
-#         else_=cast(MatchPlayers.deaths, Float)
-#     )
-# )
+kda_expr = (
+    (cast(MatchPlayers.kills, Float) + cast(MatchPlayers.assists, Float))
+    /
+    case(
+        (MatchPlayers.deaths == 0, 1),
+        else_=cast(MatchPlayers.deaths, Float)
+    )
+)
 
-# # Query for top 5 players based on average KDA
-# top_players = (
-#     session.query(
-#         MatchPlayers.steam_account_id,
-#         func.avg(kda_expr).label("avg_kda")
-#     )
-#     .group_by(MatchPlayers.steam_account_id)
-#     .order_by(func.avg(kda_expr).desc())
-#     .limit(5)
-#     .all()
-# )
+# Query for top 5 players based on average KDA, now including player names
+top_players = (
+    session.query(
+        TeamPlayers.name,  # Include player name from TeamPlayers
+        MatchPlayers.steam_account_id,
+        func.avg(kda_expr).label("avg_kda")
+    )
+    .join(TeamPlayers, MatchPlayers.steam_account_id == TeamPlayers.steam_account_id)  # Join with TeamPlayers
+    .group_by(MatchPlayers.steam_account_id, TeamPlayers.name)  # Group by both ID and name
+    .order_by(func.avg(kda_expr).desc())
+    .limit(10)
+    .all()
+)
 
-# print("Top 5 Players with Highest Average KDA:")
-# for steam_account_id, avg_kda in top_players:
-#     print(f"Steam Account ID: {steam_account_id}, Average KDA: {avg_kda:.2f}")
-## this is okay but i shoould have joined with the names (i think its in team)
-## steam account id to name
-
+print("\nTop 5 Players with Highest Average KDA:")
+for player_name, steam_account_id, avg_kda in top_players:
+    print(f"Player: {player_name}, Steam Account ID: {steam_account_id}, Average KDA: {avg_kda:.2f}")
 
 # # Q 5: How does dota plus hero level correlate with hero performance?
 ## needs a bit more thibking here, esp. with the test, correlation
