@@ -853,3 +853,7 @@ if role_avg_corrs:
     else:
         print("  Hero mastery shows minimal overall correlation with performance across roles.")
         print(f"  Average correlation: r = {overall_effect:.3f}")
+
+
+## one player with top x preferefered heroes 
+## denies with XPM 
