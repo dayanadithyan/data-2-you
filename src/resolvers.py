@@ -4,6 +4,8 @@ from typing import Any, Dict, List, Optional
 import asyncpg
 from redis import asyncio as aioredis
 import json
+import asyncio
+from .sql_chain import db_chain
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +25,15 @@ class GraphQLResolver:
         """Async context manager exit - cleanup resources."""
         if hasattr(self, 'session') and self.session:
             await self.session.close()
+            
+    async def resolve_sql_query(self, question: str) -> str:
+        """
+        Natural-language to SQL query via LangChain, execute, and return answer.
+        """
+        # run sync chain in thread to avoid blocking event loop
+        loop = asyncio.get_event_loop()
+        answer = await loop.run_in_executor(None, db_chain.run, question)
+        return answer
 
     async def resolve_hero_timeline(self, hero_id: int, **kwargs) -> List[Dict[str, Any]]:
         """Resolve hero timeline data."""

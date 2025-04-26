@@ -1,7 +1,7 @@
-# --------------- schema.py ---------------
 import strawberry
 from datetime import datetime
 from typing import List, Optional, AsyncGenerator
+from strawberry.types import Info
 
 @strawberry.type
 class PositionMetrics:
@@ -96,6 +96,12 @@ class Query:
             objective_timeline=[],
             team_synergy=0.0
         )
+
+    @strawberry.field
+    async def sql_query(self, question: str, info: Info) -> str:
+        """Natural-language to SQL query via LangChain and return answer."""
+        # delegate to resolver on the context
+        return await info.context["resolver"].resolve_sql_query(question)
 
 @strawberry.type
 class Mutation:

@@ -26,3 +26,15 @@ isort>=5.9.3
 flake8>=3.9.2
 pytest>=6.2.5
 pytest-asyncio>=0.15.1
+
+ # Utilities
+ python-dotenv>=0.19.0
+ loguru>=0.5.3
+
+
+langchain>=0.1.0
+langchain-experimental>=0.1.0         # for SQLDatabaseChain :contentReference[oaicite:3]{index=3}
+
+huggingface
+transformers>=4.35.0                  # to load FLAN-T5 :contentReference[oaicite:4]{index=4}
+sentence-transformers>=2.2.2          # for all-MiniLM-L6-v2 embeddings :contentReference[oaicite:5]{index=5}
