@@ -1,0 +1,241 @@
+@prefix : <http://example.org/dota#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/dota> rdf:type owl:Ontology .
+
+### 1. GameEnvironment ###
+
+:GameEnvironment rdf:type owl:Class .
+:Map             rdf:type owl:Class ; rdfs:subClassOf :GameEnvironment .
+:Structure       rdf:type owl:Class ; rdfs:subClassOf :GameEnvironment .
+:Terrain         rdf:type owl:Class ; rdfs:subClassOf :GameEnvironment .
+:TimeState       rdf:type owl:Class ; rdfs:subClassOf :GameEnvironment .
+:Position        rdf:type owl:Class ; rdfs:subClassOf :GameEnvironment .
+
+### 1.1 Map & Regions ###
+
+:Lane              rdf:type owl:Class ; rdfs:subClassOf :Map .
+:TopLane           rdf:type owl:Class ; rdfs:subClassOf :Lane .
+:MidLane           rdf:type owl:Class ; rdfs:subClassOf :Lane .
+:BottomLane        rdf:type owl:Class ; rdfs:subClassOf :Lane .
+:Jungle            rdf:type owl:Class ; rdfs:subClassOf :Map .
+:RadiantJungle     rdf:type owl:Class ; rdfs:subClassOf :Jungle .
+:DireJungle        rdf:type owl:Class ; rdfs:subClassOf :Jungle .
+:River             rdf:type owl:Class ; rdfs:subClassOf :Map .
+:Base              rdf:type owl:Class ; rdfs:subClassOf :Map .
+:RadiantBase       rdf:type owl:Class ; rdfs:subClassOf :Base .
+:DireBase          rdf:type owl:Class ; rdfs:subClassOf :Base .
+:RoshanPit         rdf:type owl:Class ; rdfs:subClassOf :Map .
+:TormentorPit      rdf:type owl:Class ; rdfs:subClassOf :Map .
+:RadiantTormentor  rdf:type owl:Class ; rdfs:subClassOf :TormentorPit .
+:DireTormentor     rdf:type owl:Class ; rdfs:subClassOf :TormentorPit .
+:SecretShop        rdf:type owl:Class ; rdfs:subClassOf :Map .
+:OutpostLocation   rdf:type owl:Class ; rdfs:subClassOf :Map .
+:RuneSpawnLocation rdf:type owl:Class ; rdfs:subClassOf :Map .
+:PowerRuneLocation rdf:type owl:Class ; rdfs:subClassOf :RuneSpawnLocation .
+:BountyRuneLocation rdf:type owl:Class ; rdfs:subClassOf :RuneSpawnLocation .
+:WaterRuneLocation rdf:type owl:Class ; rdfs:subClassOf :RuneSpawnLocation .
+
+### 1.2 Structure ###
+
+:Ancient          rdf:type owl:Class ; rdfs:subClassOf :Structure .
+:Tower            rdf:type owl:Class ; rdfs:subClassOf :Structure .
+:Tier1Tower       rdf:type owl:Class ; rdfs:subClassOf :Tower .
+:Tier2Tower       rdf:type owl:Class ; rdfs:subClassOf :Tower .
+:Tier3Tower       rdf:type owl:Class ; rdfs:subClassOf :Tower .
+:Tier4Tower       rdf:type owl:Class ; rdfs:subClassOf :Tower .
+:Barracks         rdf:type owl:Class ; rdfs:subClassOf :Structure .
+:MeleeBarracks    rdf:type owl:Class ; rdfs:subClassOf :Barracks .
+:RangedBarracks   rdf:type owl:Class ; rdfs:subClassOf :Barracks .
+:Outpost          rdf:type owl:Class ; rdfs:subClassOf :Structure .
+:Fountain         rdf:type owl:Class ; rdfs:subClassOf :Structure .
+:NeutralItemStash rdf:type owl:Class ; rdfs:subClassOf :Structure .
+
+### 1.3 Terrain ###
+
+:Pathable        rdf:type owl:Class ; rdfs:subClassOf :Terrain .
+:Unpathable      rdf:type owl:Class ; rdfs:subClassOf :Terrain .
+:Trees           rdf:type owl:Class ; rdfs:subClassOf :Terrain .
+:HighGround      rdf:type owl:Class ; rdfs:subClassOf :Terrain .
+:LowGround       rdf:type owl:Class ; rdfs:subClassOf :Terrain .
+
+### 1.4 TimeState ###
+
+:DayNightCycle    rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:PreGame          rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:HeroSelection    rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:LanePhase        rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:MidGame          rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:LateGame         rdf:type owl:Class ; rdfs:subClassOf :TimeState .
+:CreepSpawnTimer  rdf:type owl:DatatypeProperty; rdfs:domain :TimeState; rdfs:range xsd:decimal .
+:NeutralSpawnTimer rdf:type owl:DatatypeProperty; rdfs:domain :TimeState; rdfs:range xsd:decimal .
+:RuneSpawnTimer   rdf:type owl:DatatypeProperty; rdfs:domain :TimeState; rdfs:range xsd:decimal .
+:TormentorSpawnTimer rdf:type owl:DatatypeProperty; rdfs:domain :TimeState; rdfs:range xsd:decimal .
+:RoshanRespawnTimer rdf:type owl:DatatypeProperty; rdfs:domain :TimeState; rdfs:range xsd:decimal .
+
+### 1.5 Position ###
+
+:Coordinate       rdf:type owl:DatatypeProperty; rdfs:domain :Position; rdfs:range xsd:string .
+:Direction        rdf:type owl:DatatypeProperty; rdfs:domain :Position; rdfs:range xsd:string .
+:Facing           rdf:type owl:DatatypeProperty; rdfs:domain :Position; rdfs:range xsd:string .
+
+### 2. Entity ###
+
+:Entity           rdf:type owl:Class .
+:Team             rdf:type owl:Class ; rdfs:subClassOf :Entity .
+:Radiant          rdf:type owl:Class ; rdfs:subClassOf :Team .
+:Dire             rdf:type owl:Class ; rdfs:subClassOf :Team .
+:Unit             rdf:type owl:Class ; rdfs:subClassOf :Entity .
+:Hero             rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:StrengthHero     rdf:type owl:Class ; rdfs:subClassOf :Hero .
+:AgilityHero      rdf:type owl:Class ; rdfs:subClassOf :Hero .
+:IntelligenceHero rdf:type owl:Class ; rdfs:subClassOf :Hero .
+:CreepUnit        rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:LaneCreep        rdf:type owl:Class ; rdfs:subClassOf :CreepUnit .
+:MeleeCreep       rdf:type owl:Class ; rdfs:subClassOf :LaneCreep .
+:RangedCreep      rdf:type owl:Class ; rdfs:subClassOf :LaneCreep .
+:SiegeCreep       rdf:type owl:Class ; rdfs:subClassOf :LaneCreep .
+:NeutralCreep     rdf:type owl:Class ; rdfs:subClassOf :CreepUnit .
+:SmallCamp        rdf:type owl:Class ; rdfs:subClassOf :NeutralCreep .
+:MediumCamp       rdf:type owl:Class ; rdfs:subClassOf :NeutralCreep .
+:LargeCamp        rdf:type owl:Class ; rdfs:subClassOf :NeutralCreep .
+:AncientCamp      rdf:type owl:Class ; rdfs:subClassOf :NeutralCreep .
+:IllusionUnit     rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:ControlledSummon rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:Courier          rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:RoshanEntity     rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:TormentorEntity  rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:ObserverWard     rdf:type owl:Class ; rdfs:subClassOf :Unit .
+:SentryWard       rdf:type owl:Class ; rdfs:subClassOf :Unit .
+
+### 3. Item ###
+
+:Item             rdf:type owl:Class .
+:PurchasableItem  rdf:type owl:Class ; rdfs:subClassOf :Item .
+:BasicItem        rdf:type owl:Class ; rdfs:subClassOf :PurchasableItem .
+:RecipeItem       rdf:type owl:Class ; rdfs:subClassOf :PurchasableItem .
+:ConsumableItem   rdf:type owl:Class ; rdfs:subClassOf :Item .
+:Tango            rdf:type owl:Class ; rdfs:subClassOf :ConsumableItem .
+:Clarity          rdf:type owl:Class ; rdfs:subClassOf :ConsumableItem .
+:HealthPotion     rdf:type owl:Class ; rdfs:subClassOf :ConsumableItem .
+:DustOfAppearance rdf:type owl:Class ; rdfs:subClassOf :ConsumableItem .
+:EquippableItem   rdf:type owl:Class ; rdfs:subClassOf :Item .
+:WeaponItem       rdf:type owl:Class ; rdfs:subClassOf :EquippableItem .
+:ArmorItem        rdf:type owl:Class ; rdfs:subClassOf :EquippableItem .
+:AccessoryItem    rdf:type owl:Class ; rdfs:subClassOf :EquippableItem .
+:BootsItem        rdf:type owl:Class ; rdfs:subClassOf :EquippableItem .
+:FragmentItem     rdf:type owl:Class ; rdfs:subClassOf :Item .
+:AghanimsShard    rdf:type owl:Class ; rdfs:subClassOf :FragmentItem .
+:AghanimsScepter  rdf:type owl:Class ; rdfs:subClassOf :FragmentItem .
+:NeutralItem      rdf:type owl:Class ; rdfs:subClassOf :Item .
+:Tier1NeutralItem rdf:type owl:Class ; rdfs:subClassOf :NeutralItem .
+:Tier2NeutralItem rdf:type owl:Class ; rdfs:subClassOf :NeutralItem .
+:Tier3NeutralItem rdf:type owl:Class ; rdfs:subClassOf :NeutralItem .
+:Tier4NeutralItem rdf:type owl:Class ; rdfs:subClassOf :neutralItem .
+:Tier5NeutralItem rdf:type owl:Class ; rdfs:subClassOf :NeutralItem .
+:SpecialItem      rdf:type owl:Class ; rdfs:subClassOf :Item .
+:AegisOfTheImmortal rdf:type owl:Class ; rdfs:subClassOf :SpecialItem .
+:CheeseItem       rdf:type owl:Class ; rdfs:subClassOf :SpecialItem .
+:RefresherShard   rdf:type owl:Class ; rdfs:subClassOf :SpecialItem .
+
+### 4. Ability ###
+
+:Ability          rdf:type owl:Class .
+:BasicAbility     rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:UltimateAbility  rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:ActiveAbility    rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:PassiveAbility   rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:ToggleAbility    rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:VectorTargetedAbility rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:ItemAbility      rdf:type owl:Class ; rdfs:subClassOf :Ability .
+:TalentAbility    rdf:type owl:Class ; rdfs:subClassOf :Ability .
+
+### 5. Rune ###
+
+:Rune             rdf:type owl:Class .
+:PowerRune        rdf:type owl:Class ; rdfs:subClassOf :Rune .
+:HasteRune        rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:DoubleDamageRune rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:RegenerationRune rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:ArcaneRune       rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:InvisibilityRune rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:IllusionRune     rdf:type owl:Class ; rdfs:subClassOf :PowerRune .
+:BountyRune       rdf:type owl:Class ; rdfs:subClassOf :Rune .
+:WaterRune        rdf:type owl:Class ; rdfs:subClassOf :Rune .
+
+### 6. GameMechanics ###
+
+:MatchState       rdf:type owl:Class .
+:DraftPhase       rdf:type owl:Class ; rdfs:subClassOf :MatchState .
+:PickPhase        rdf:type owl:Class ; rdfs:subClassOf :MatchState .
+:BanPhase         rdf:type owl:Class ; rdfs:subClassOf :MatchState .
+:Score            rdf:type owl:DatatypeProperty ; rdfs:domain :MatchState ; rdfs:range xsd:integer .
+:NetWorth         rdf:type owl:DatatypeProperty ; rdfs:domain :MatchState ; rdfs:range xsd:integer .
+:Objectivestatus  rdf:type owl:DatatypeProperty ; rdfs:domain :MatchState ; rdfs:range xsd:string .
+:Vision           rdf:type owl:Class .
+:FogOfWar         rdf:type owl:Class ; rdfs:subClassOf :Vision .
+:TrueVision       rdf:type owl:Class ; rdfs:subClassOf :Vision .
+:NightVision      rdf:type owl:Class ; rdfs:subClassOf :Vision .
+:SharedVision     rdf:type owl:Class ; rdfs:subClassOf :Vision .
+:Combat           rdf:type owl:Class .
+:DamageType       rdf:type owl:Class ; rdfs:subClassOf :Combat .
+:PhysicalDamage   rdf:type owl:Class ; rdfs:subClassOf :DamageType .
+:MagicalDamage    rdf:type owl:Class ; rdfs:subClassOf :DamageType .
+:PureDamage       rdf:type owl:Class ; rdfs:subClassOf :DamageType .
+:HPRemoval        rdf:type owl:Class ; rdfs:subClassOf :DamageType .
+:AttackType       rdf:type owl:Class .
+:MeleeAttack      rdf:type owl:Class ; rdfs:subClassOf :AttackType .
+:RangedAttack     rdf:type owl:Class ; rdfs:subClassOf :AttackType .
+:ArmorType        rdf:type owl:Class ; rdfs:subClassOf :Combat .
+:Resistance       rdf:type owl:Class ; rdfs:subClassOf :Combat .
+:PhysicalResistance rdf:type owl:Class ; rdfs:subClassOf :Resistance .
+:MagicalResistance rdf:type owl:Class ; rdfs:subClassOf :Resistance .
+:StatusResistance  rdf:type owl:Class ; rdfs:subClassOf :Resistance .
+:CombatModifier   rdf:type owl:Class .
+:Evasion           rdf:type owl:Class ; rdfs:subClassOf :CombatModifier .
+:BlockChance       rdf:type owl:Class ; rdfs:subClassOf :CombatModifier .
+:CriticalStrike    rdf:type owl:Class ; rdfs:subClassOf :CombatModifier .
+:LifeSteal         rdf:type owl:Class ; rdfs:subClassOf :CombatModifier .
+:CastPointModification rdf:type owl:Class ; rdfs:subClassOf :CombatModifier .
+:Resources         rdf:type owl:Class .
+:Gold              rdf:type owl:Class ; rdfs:subClassOf :Resources .
+:ReliableGold      rdf:type owl:Class ; rdfs:subClassOf :Gold .
+:UnreliableGold    rdf:type owl:Class ; rdfs:subClassOf :Gold .
+:Experience        rdf:type owl:Class ; rdfs:subClassOf :Resources .
+:Health            rdf:type owl:DatatypeProperty ; rdfs:domain :Resources ; rdfs:range xsd:integer .
+:Mana              rdf:type owl:DatatypeProperty ; rdfs:domain :Resources ; rdfs:range xsd:integer .
+:Charges           rdf:type owl:DatatypeProperty ; rdfs:domain :Resources ; rdfs:range xsd:integer .
+:Cooldown          rdf:type owl:DatatypeProperty ; rdfs:domain :Resources ; rdfs:range xsd:integer .
+:StatusEffect      rdf:type owl:Class .
+:Buff              rdf:type owl:Class ; rdfs:subClassOf :StatusEffect .
+:MovementBuff      rdf:type owl:Class ; rdfs:subClassOf :Buff .
+:DamageBuff        rdf:type owl:Class ; rdfs:subClassOf :Buff .
+:ArmorBuff         rdf:type owl:Class ; rdfs:subClassOf :Buff .
+:RegenerationBuff  rdf:type owl:Class ; rdfs:subClassOf :Buff .
+:Debuff            rdf:type owl:Class ; rdfs:subClassOf :StatusEffect .
+:Stun              rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Slow              rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Silence           rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Root              rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Disarm            rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Break             rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Fear              rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Rupture           rdf:type owl:Class ; rdfs:subClassOf :Debuff .
+:Movement          rdf:type owl:Class .
+:WalkingMovement   rdf:type owl:Class ; rdfs:subClassOf :Movement .
+:ForcedMovement    rdf:type owl:Class ; rdfs:subClassOf :Movement .
+:Teleportation     rdf:type owl:Class ; rdfs:subClassOf :Movement .
+:PhaseMovement     rdf:type owl:Class ; rdfs:subClassOf :Movement .
+:GameObjective     rdf:type owl:Class .
+:PrimaryObjective  rdf:type owl:Class ; rdfs:subClassOf :GameObjective .
+:AncientDestruction rdf:type owl:Class ; rdfs:subClassOf :PrimaryObjective .
+:SecondaryObjective rdf:type owl:Class ; rdfs:subClassOf :GameObjective .
+:TowerDestruction  rdf:type owl:Class ; rdfs:subClassOf :SecondaryObjective .
+:RoshanKill        rdf:type owl:Class ; rdfs:subClassOf :SecondaryObjective .
+:TormentorKill     rdf:type owl:Class ; rdfs:subClassOf :SecondaryObjective .
+:CourierKill       rdf:type owl:Class ; rdfs:subClassOf :SecondaryObjective .
+:OutpostCapture    rdf:type owl:Class ; rdfs:subClassOf :SecondaryObjective .
+..
