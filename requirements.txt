@@ -38,3 +38,5 @@ langchain-experimental>=0.1.0         # for SQLDatabaseChain :contentReference[o
 huggingface
 transformers>=4.35.0                  # to load FLAN-T5 :contentReference[oaicite:4]{index=4}
 sentence-transformers>=2.2.2          # for all-MiniLM-L6-v2 embeddings :contentReference[oaicite:5]{index=5}
+langchain-anthropic>=0.1.0
+langchain-core>=0.1.0
