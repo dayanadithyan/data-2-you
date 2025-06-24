@@ -1,0 +1,1459 @@
+--- Subsection 1 ---
+Before starting your first game, you probably want to prepare yourself at least a little bit.
+Whether you want to jump right in and play or read up on everything you can will determine which sections you should read over.
+New players with no experience should carefully read the first half of this guide. The earlier sections try to explain the basics in great detail. These are things you should learn before entering a game against other people. The guide then walks you through playing your first game and later sections describe more intermediate to advanced concepts that can be read once you have some experience.
+Videos and wiki links can be considered supplementary and are useful for more in-depth detail if the guide text isn't enough.
+The last section contains links to other sites where you can find more guides, videos, news, streams, and forums for Dota 2.
+
+--- Subsection 2 ---
+Dota is a game played between two teams of five players. The teams are called the Radiant and the Dire with bases on opposite corners of the map. On the map there are three paths, known as lanes, connecting the two bases with a river that runs through the paths, dividing them and the map in half. Every 30 seconds three small groups of units spawn at each team's base, one for each lane. These units are called creeps, and they will travel down a lane and fight any enemy unit or building in the way.
+The objective of the game is to destroy the enemy team's Ancient, a building located in their base.
+On the enemy's side of the map are buildings protecting the enemy Ancient that must be killed before a team can reach the enemy Ancient.
+Each player controls a unit known as a hero. When a player's hero is killed, they remain dead for a certain period of time and then are resurrected in their own base. Throughout the course of the game, players spend time making their heroes stronger while pushing towards the enemy Ancient by killing enemy creeps, heroes, and buildings. Killing enemy creeps, heroes, and buildings also rewards players with gold. Gold can be used to purchase items for your hero, making them even stronger.
+The first team to kill the other team's Ancient wins.
+Here's a brief 4 minute video by nigmanoname containing the information above as well as information covered in later sections.
+
+--- Subsection 3 ---
+Here you will find descriptions of units, items, game mechanics, important terms, and concepts.
+Clicking a term will take you to its wiki page.
+Gold
+[www.dota2wiki.com]
+You accumulate 1 gold every 0.6 seconds, which is a rate of 5 gold every 3 seconds.
+Used to purchase items
+Players begin a game with 625 gold.
+You lose some gold when your hero
+dies
+[www.dota2wiki.com]
+.
+Gold is also rewarded for killing other players and various things that will be described later.
+Item
+[www.dota2wiki.com]
+- An object that can be purchased at a shop with gold. (More detail in the Item section.)
+Makes heroes stronger and may have an ability.
+A hero may carry up to six items in their inventory.
+Additional items may be kept in storage, called a stash, located in the Fountain. Stashed items do not affect the hero.
+Distance - Used in describing the range and radius of all things. Distance is measured in units.
+Experience
+[www.dota2wiki.com]
+- Points awarded to a hero when in the vicinity of an enemy creep or hero death.
+When enough experience is accumulated, a hero will gain a level.
+The amount of experience an enemy creep or hero grants on death is equally divided among all heroes in a 1300 unit radius.
+Creep
+[www.dota2wiki.com]
+- A small autonomous unit that fights for your team.
+Gives experience to enemy heroes in the area upon death.
+Melee, Ranged, and Siege creeps
+Creep Wave
+[www.dota2wiki.com]
+- A group of creeps that spawn every 30 seconds from Barracks at the ends of each lane and travel towards the enemy base.
+Waves are composed of three different types of creeps. There are ranged creeps, melee creeps, and siege creeps.
+The first wave of creeps consists of 3 melee and 1 ranged creep.
+Siege creeps begin to spawn at 3:00.
+Siege creeps only spawn every seventh wave.
+Wave sizes increase periodically throughout the game.
+Last-hit
+[www.dota2wiki.com]
+- the killing blow on a creep.
+A player receives gold for landing the killing blow on an enemy creep.
+Deny
+[www.dota2wiki.com]
+- last-hitting your own creep
+Denying a creep reduces the amount of experience given to the enemy team when it dies by 50%.
+It also denies the enemy team gold, because they did not get the last-hit on the creep.
+You can only start to attack your own creeps once they hit 50% health.
+Denying is done by pressing the attack move key (default 'A') and then left-clicking the target creep.
+Farming - Last-hitting neutral and enemy creeps for gold. Takes place in a lane or in the jungle.
+Tree
+[www.dota2wiki.com]
+- A terrain element found all over the map.
+Trees obstruct
+vision
+[www.dota2wiki.com]
+Some abilities and items can be used to clear trees
+There are two heavily forested areas on the map known as the jungle.
+Trees will regrow 5 minutes after they're destroyed.
+A tree on the Radiant side of the river and a tree on the Dire side of the river.
+Neutral Creep Camp
+[www.dota2wiki.com]
+- A small group of special creep units that are not part of either team.
+Located in the Jungle and the first camps spawn 30 seconds into the game.
+Camps respawn at the top of every minute,  XX:00 on the game clock.
+They are an additional source of gold and experience
+More details about neutral creep camps are discussed in "Intermediate Game Mechanics" and  "The Jungle" sections.
+Mega Creep
+[www.dota2wiki.com]
+- Stronger versions of normal creeps.
+Begin to spawn in place of normal creeps when barracks (see Buildings section) are destroyed.
+Give less gold and experience when killed.
+Once all six barracks have been destroyed, Upgraded Mega Creeps, an even stronger version of mega creeps begin to spawn.
+Mega melee and ranged creeps
+Damage
+[www.dota2wiki.com]
+There are several different types of damage that heroes may inflict and receive.
+There are three main types of damage one should learn about first.
+Physical - This type of damage is generally associated with normal attacks. A hero's regular attack, unaffected by any abilities, is physical damage. Regular attacks dealt by other units such as creeps is also physical.
+There are different types of physical damage, but a beginner need not concern themselves with knowing them all right away. Those interested in reading up about them can see the wiki page on Damage. Physical damage can be reduced by a hero's
+armor
+[www.dota2wiki.com]
+property.
+Magic - This type of damage is generally associated with spells. It can be reduced by a hero's
+magic resistance
+[www.dota2wiki.com]
+, a hero property similar to armor.
+Pure - Similar to magic damage, except pure damage is not reduced by magic resistance and armor.
+Dota 2 is full of exceptions, and there are many abilities, items, and heroes that don't follow this general behavior. You will get to know these exceptions as you play the game.
+Role
+[www.dota2wiki.com]
+- The part a hero plays in contributing to its team based upon their attributes, abilities, and items.
+Pushing
+[www.dota2wiki.com]
+- Killing enemy creep waves to advance your own creep wave down a lane in order to kill buildings.
+Heroes that excel at pushing are known as pushers.
+Gank
+[www.dota2wiki.com]
+- A (surprise) kill on a hero.
+Heroes that excel at ganking are known as gankers.
+
+--- Subsection 4 ---
+Buildings make up the Radiant and Dire bases and give gold to the enemy team when they are destroyed.
+Ancient
+[www.dota2wiki.com]
+- The main building each team wants to protect on their side and destroy on the other.
+Can only be destroyed once the two towers guarding it have been destroyed.
+Also referred to as a Throne (from the original Dota).
+Tower
+[www.dota2wiki.com]
+- Buildings that guard lanes, barracks, and the Ancient. They are stationary and ranged, shooting strong projectiles at enemies that come too close.
+There are 4 tiers of towers, labeled according to how far away from the Ancient they are. Tier 1 towers are the furthest outer towards, and Tier 4 towers are the two towers directly in front of the Ancient.
+Higher tier towers do more damage.
+Higher tier towers reward more gold to the enemy team when killed.
+Will attack enemy heroes that are attacking allied heroes.
+Have an attack range of 700 units.
+Rewards the enemy team with gold when destroyed.
+Can be denied. As a result, the enemy team receives less gold.
+You can begin to deny your tower when it reaches 10% of its total health, as opposed to 50% health for denying creeps.
+A Radiant and Dire tower.
+See wiki for more details on how towers determine their attack targets and other specific numbers.
+These albums for
+Radiant
+[imgur.com]
+and
+Dire
+[imgur.com]
+show great in-game images of tower attack ranges and foliage markings on the ground that you can use to help you remember them.
+Barracks
+[www.dota2wiki.com]
+- The buildings at the beginning of each lane where creeps spawn.
+Barracks cannot be attacked until the tower guarding them has been destroyed
+There are two types of barracks:
+Ranged Barracks
+Melee Barracks
+When a ranged barracks is destroyed, the enemy will spawn mega ranged creeps in that lane instead of regular ranged creeps from then on.
+When a melee barracks is destroyed, the enemy will spawn mega melee creeps in that lane instead of regular melee creeps from then on.
+Towers, Ancient, and the Fountain all have
+true sight
+[www.dota2wiki.com]
+. They can see invisible enemies.
+Backdooring - Attacking buildings without the support of creeps.
+Tier 2, 3, and 4 Towers and the Barracks have
+backdoor protection
+[www.dota2wiki.com]
+.
+Buildings with backdoor protection and without nearby creeps will regenerate health when attacked.
+It is possible to kill buildings and overcome their backdoor protection. If a team's damage output is high enough, a building can lose health faster than the backdoor protection can regenerate.
+
+--- Subsection 5 ---
+There are currently 112
+heroes
+[www.dota2wiki.com]
+in the original Dota. So far, 110 of them (as of 2/27/2015) have been ported to Dota 2 with the rest being steadily released.
+Heroes gain experience and gold for killing enemy heroes and creeps.
+Heroes start the game at level 1 and can reach a max level of 25.
+A hero will increase in level when it gains enough experience.
+Heroes have different
+attack ranges
+[www.dota2wiki.com]
+- how close they must be to their target in order to hit them.
+Melee heroes must be next to their target in order to hit them. Most melee heroes have an attack range of 128 units.
+Ranged heroes fire projectiles and may be farther away from their target. Attack ranges vary from hero to hero, with the highest attack range being 700 units.
+Health
+[www.dota2wiki.com]
+- Also known as hit points, this represents how much life your Hero has.
+Mana
+[www.dota2wiki.com]
+- A resource used by your hero to cast abilities. Most abilities consume mana when used, and can only be used when a hero has enough mana.
+Death
+Your hero dies when your health reaches zero.
+Your hero will respawn in the Fountain after a short period of time has passed.
+The time delay before you respawn gets longer as your hero level increases.
+Gold can be spent to purchase a
+buyback
+[www.dota2wiki.com]
+which instantly revives your hero, but can only be done once every 7 minutes.
+Attributes
+All heroes have the following three
+attributes
+[www.dota2wiki.com]
+.
+strength
+[www.dota2wiki.com]
+(str)
+Affects a hero's total health and health regeneration
+agility
+[www.dota2wiki.com]
+(agi)
+Affects a hero's armor and attack speed.
+intelligence
+[www.dota2wiki.com]
+(int)
+Affects a hero's total mana and mana regeneration.
+Every hero has one of these three attributes as their primary attribute. A hero's primary attribute is where their attack damage comes from. One point of primary attribute gives one attack damage.
+Levelling up passively makes your hero stronger by raising its attributes values. Each hero differs in the growth rate of their three attributes. In general, your hero's primary attribute grows the fastest.
+For example,
+Lich
+[www.dota2wiki.com]
+starts with 18 base strength, 15 base agility, and 18 base intelligence. His primary attribute is Intelligence and he gains 1.55 strength, 2 agility, and 3.25 intelligence per level.
+The max health and mana of your hero is determined by its total strength and intelligence, respectively. As you gain more strength and intelligence, your health and mana will increase.
+Other hero properties affected by increases in attributes include hero attack damage, health regeneration speed, armor, attack speed, and mana regeneration speed.
+See
+Attributes
+[www.dota2wiki.com]
+for more details on numbers and mechanics affected by attributes.
+Abilities
+Every hero has a unique set of
+abilities
+[www.dota2wiki.com]
+. In general, every ability has a
+mana cost (the amount of mana needed and consumed when it is used) and using an ability puts it on a
+cooldown which limits how often it can be used. Ability effects can range from being very simple to very complex.
+Every hero also has an
+ultimate
+[www.dota2wiki.com]
+ability which is their most powerful ability. Using them can be a game-changer and they often have long cooldowns so they must be used sparingly.
+All heroes have four main abilities including their ultimate.
+Some heroes have abilities that are broken down into multiple sub-abilities.
+The most extreme example of this is the hero
+Invoker
+[www.dota2wiki.com]
+who has 10 extra skills that are the result of combining combinations of his three main abilities with his ultimate.
+Ability types and effects are discussed in more detail in the Ability section.
+
+--- Subsection 6 ---
+Brief Hero Roles Overview
+Since all heroes have different abilities, starting attribute values, and attribute gains per level, some heroes better at performing certain
+roles
+[www.dota2wiki.com]
+than others.
+A couple examples to get you thinking about where roles come from.
+Since the agility stat affects a hero's attack speed and armor, a hero whose primary stat is agility will generally be able to do more damage than other heroes. You want these heroes to be the ones purchasing items that increase their damage and have them kill the other team's heroes.
+A hero with abilities that allow them to be more mobile than others and output a lot of damage in a short amount of time (burst damage) would excel at killing heroes. You want them to be roaming around the map trying to pick off lone enemy heroes (ganking).
+A hero with a large area of effect ability would want to catch as many enemies as possible with it. You want them to be focused on using their abilities during large teamfights involving many heroes.
+The makeup of a hero, its abilities and attributes, affects what items a hero needs to reach its potential and be most effective in a game. A hero's abilities, attributes, and items determines what role the hero is suited for.
+Roles are important, because they allow players to describe heroes in general without having to point out specific heroes. They also define the different responsibilities for each player on a team.
+While there are many ways to define roles, here's the categorization you will find in-game. These roles are not mutually exclusive, so a hero can fit many of these roles at the same time.
+Carry
+[www.dota2wiki.com]
+- Heroes with abilities that scale well later into the game and with items. These are the heroes a team relies on to do most of their damage and they usually end up being the strongest heroes later in the game.
+Disabler
+[www.dota2wiki.com]
+- Heroes with abilities that are good at locking down a single target or multiple heroes on the enemy team.
+Lane Support
+[www.dota2wiki.com]
+- Heroes that are good at supporting their allies in a lane. They can either pressure enemies in the lane, allowing their allies to farm, or are able to provide some sort of heal to sustain their allies in a lane.
+Initiator
+[www.dota2wiki.com]
+- Heroes that are good at engaging the enemy and starting teamfights.
+Jungler
+[www.dota2wiki.com]
+- Heroes that excel when put in the jungle due to their ability to kill jungle creeps efficiently.
+Support - Heroes that don't need expensive items to be effective. They can contribute enough just based on their abilities. They are not relied on to do damage, but they can assist others in getting kills and keeping teammates alive.
+Durable - Heroes that can endure taking a lot of damage.
+Nuker - Heroes with abilities that deal a lot of damage in quick bursts or in a single attack, especially in an AoE.
+Pusher
+[www.dota2wiki.com]
+- Heroes that can kill creep waves and destroy buildings faster than most.
+Escape
+[www.dota2wiki.com]
+- Heroes fitting this role have abilities that make them hard to chase down and kill. This often means some sort of invisibility ability or an ability that gives the hero extra mobility.
+Additional roles
+[www.dota2wiki.com]
+. These roles aren't listed in the game, but they are just as commonly used to describe heroes.
+Roamer - Rather than stay in lanes trying to get gold and experience, these heroes are good at freely moving around the map, trying to get kills in other lanes and trying to get map control.
+Ganker - These heroes are good at getting quick hero kills on their own or have good abilities for setting up others to get a quick kill, such as an ability that stuns an enemy for a long time.
+Semi-Carry - Heroes that are the strongest during the middle of the game, usually because of their ability to gain many kills early giving them an early lead. However, their abilities and attributes don't scale as well with items into the late game, so they are eventually overshadowed by a true Carry type hero.
+Basic knowledge of roles is important when choosing what hero to play. Choosing a hero is discussed in the section "Choosing a Hero and Team Composition".
+For a more detailed discussion on this topic, see the section on Hero Roles and Distributing Farm.
+A DotaCinema video explaining hero roles.
+
+--- Subsection 7 ---
+Abilities can also be referred to as skills and spells.
+Characteristics
+All heroes have abilities, but what are they and what do they do?
+Some general defining characteristics of an ability are:
+Type - Some abilities are active while others are passive. Active abilities require the player to command their hero to use them while passive abilities have their effects always on.
+Target type - Some abilities may only be cast on units and others may only be cast somewhere on the ground. There are also non-targeted abililties and using them applies some instant effect on your hero.
+Range - How close to the target you have to be to use the ability.
+Target Units - What units can be affected by this ability? Heroes, creeps, or both. Allies, enemies, or both. Some abilities only affect your own hero.
+Cast Point/Animation - The time it takes from the moment an ability is activated by the player to when the ability takes effect. Abilities with high cast points give enemies the chance to react as they see the abilities being cast.
+Area of Effect - Abbreviated AoE. An AoE ability affects all valid targets within a certain radius.
+Channeling - A channeled ability is one that requires the hero to stop moving and not perform any action for a period of time. Some abilities have their effects active while a hero is channeling the ability, while other abilities require the full channel duration to pass before its effect is used. Channeled abilities can be interrupted, stopping its effect or preventing it from happening.
+Effects
+Abilities can also be characterized by what their effects are. Some common effects are:
+Disables
+[www.dota2wiki.com]
+- Can affect a hero's ability to cast spells, use items, and move.
+Stun
+[www.dota2wiki.com]
+- A stun prevents a hero from moving and using any abilities or items.
+If a team has multiple heroes with stuns and disables, they should be used one after another. As one stun is about to expire, another should be used. This is known as chain stunning and maximizes the amount of time an enemy is disabled. Stuns do not stack, so using them all at once is a waste.
+Silence
+[www.dota2wiki.com]
+- A silence prevents a hero from using an abilities. A hero can still use items and move. These generally can last much longer than a stun.
+Slow
+[www.dota2wiki.com]
+- A slow hinders a hero's movement or attack speed.
+Hex
+[www.dota2wiki.com]
+- A hex transforms a hero into a small weak creature for a short period of time. In this form, a hero's movement is hindered and they cannot use abilities or items.
+Buffs - Affects a hero's attributes or properties in some positive way.
+Debuffs - Affects a hero's attributes or properties in some negative way.
+Auras
+[www.dota2wiki.com]
+- An AoE buff or debuff.
+Teleport
+[www.dota2wiki.com]
+- Moves the hero to a target point on the map.
+Blink - A form of teleport with a limit on the distance between the teleport destination and the hero's current location
+Magic Immunity
+[www.dota2wiki.com]
+- Heroes under this effect are unaffected by most spells and items. For a full description of the specific interactions between magic immunity and different abilities, see the wiki page.
+Invisibility
+[www.dota2wiki.com]
+- Heroes under invisibility cannot be seen by their enemies in the game or on the minimap, unless revealed by some sort of detection item.
+Illusions
+[www.dota2wiki.com]
+- Units that are physical copies of a hero that the player can control. They appear identical to the original hero to enemies, but allies see illusions as a different color. They usually take more damage and deal less damage than the real hero.
+Lifesteal
+[www.dota2wiki.com]
+- Returns a % of damage done by the hero as life.
+True Sight
+[www.dota2wiki.com]
+- Reveals invisible enemies in range.
+Damage over Time (DoT) - Deals damage over a period of time.
+Heroes under the effects of some DoT abilities can be
+denied
+[www.dota2wiki.com]
+by their allies in the same way creeps are denied.
+Denying any ally prevents the enemy from gaining experience and gold for the kill, but the denied hero still loses gold from dying.
+Unique Attack Modifiers
+Some abilities (as well as items) have special effects called
+Unique Attack Modifiers
+[www.dota2wiki.com]
+Unique Attack Modifiers are effects that alter a hero's normal attack, imbuing their attack with the effect. Some effects are a chance to slow, steal life, or burn mana from enemies hit by the hero's normal attack.
+In general,
+Unique Attack Modifiers do not stack
+. A hero may only use one UAM effect at a time.
+(The exception is the UAM given by the
+Eye of Skadi
+[www.dota2wiki.com]
+item which may be stacked with a UAM which gives lifesteal.)
+See
+Abilities
+[www.dota2wiki.com]
+for more in-depth descriptions and examples of abilities
+Skill Points
+You gain a skill point each time you level up. Skill points can be used to level up one of your abilities.
+There are limitations on the max level of an ability and when you can spend skill points to level up an ability. In general, 3 is the max level for ultimates and 4 for everything else.
+The max level for an ability (the number of points that can be put into an ability) is determined by your hero level. Skill points can only be spent on an ultimate at hero levels 6, 11, and 16. The max level for all other abilities starts at 1 at hero level 1 and increases by 1 every 2 hero levels.
+So you can have up to 2 skill points in any one ability at hero level 3 , 3 skill points at hero level 5, and 4 skill points at hero level 7.
+These restrictions prevent players from spending their first few skill points on a single ability and making it too powerful relative to their hero level.
+Attribute Bonus
+[www.dota2wiki.com]
+One ability common to all heroes is called Attribute Bonus, also known as Stats.
+Leveling Attribute Bonus increases your strength, agility, and intelligence attributes by 2. Unlike other abilities, there is no restriction on when you can put points into your Attribute Bonus, but it still has a max level. In general, you want to level your Attribute Bonus last, because for most heroes leveling up other abilities is more beneficial.
+See
+Upgrading Abilities
+[www.dota2wiki.com]
+for an alternate description of leveling abilities.
+Below is a view of the ability section of the HUD for a hero with 4 abilities. A hero's ultimate can always be found on the right. Right below each ability is a series of small squares which indicate how many skill points have been put into that ability.
+In this particular picture note that only one skill point has been spent on the second ability. This means the hero only has access to its second ability.
+
+--- Subsection 8 ---
+There are many locations on the map you should become familiar with before you start playing.
+Jungle - There are two jungle areas on the map one on the Radiant side and one on the Dire side. They are located between the three lanes. Neutral creep camps are located in the jungle.
+The river divides the map into the Radiant side and the Dire side. The river is traversable, but it can only be entered from the following ramp locations.
+Vision
+[www.dota2wiki.com]
+- The areas of the map you can see.
+Areas you don't have vision of are hidden by the
+fog of war
+[www.dota2wiki.com]
+.
+Every hero has vision of a certain area around themselves.
+You have vision of your team's buildings and heroes.
+Trees obstruct vision.
+Some areas of the map are more
+elevated
+[www.dota2wiki.com]
+than others. This also affects vision.
+A hero's vision at the bottom of a ramp, top of a ramp, and on top of a cliff.
+Ancient Creep Camp
+[www.dota2wiki.com]
+- Two powerful camps of neutral creeps located in their own area, one on each side of the river.
+Significantly stronger than normal neutral creep camps making them much harder to kill.
+Killing them gives more gold and experience than other neutral camps.
+Like other neutral camps, these camps can also be
+stacked
+[www.dota2wiki.com]
+.
+The locations of all towers, barracks, and the ancients.
+Fountain
+[www.dota2wiki.com]
+- The area where each player spawns to begin the game.
+It is where heroes can go to quickly heal and regenerate mana.
+Will shoot many high damage projectiles at enemies who try to enter it.
+Shop - The place where items can be purchased. There is a main shop located in each base next to the fountain. There are also two additional types of shops located on the map.
+Side Lane Shop
+[www.dota2wiki.com]
+- Offers a smaller selection of items than the shop in the Fountain, but it is conveniently placed in the side lanes.
+Secret Shop
+[www.dota2wiki.com]
+Offers a selection of some of the most expensive items in the game most of which cannot be bought in any other shops.
+Items found in the secret shop are often components used to make more powerful items.
+Runes
+[www.dota2wiki.com]
+spawn at two special locations on the map. See the section Runes for more details.
+Roshan
+[www.dota2wiki.com]
+- A powerful boss neutral creep
+Located in an area known as Roshan's Pit, the Rosh Pit, or simply the Pit.
+Respawns at a random time between 8 and 11 minutes after he is killed.
+When killed, Roshan drops an item known as the
+Aegis of the Immortal
+[www.dota2wiki.com]
+.
+If a hero holding the aegis is killed, the aegis is consumed and the hero will respawn 5 seconds later with full health and mana at the place of death. The aegis expires after 6 minutes if not used.
+When Aegis expires unused, it heals the hero fully over 5 seconds. (regen dispels on damage from players or buildings)
+Will drop an item called
+Cheese
+[www.dota2wiki.com]
+beginning with his third death in addition to dropping an Aegis. Cheese is a consumable that instantly restores 2500 health and 1000 mana to the user.
+Unlike the Aegis, Cheese does not expire and can be given to teammates.
+
+--- Subsection 9 ---
+The HUD, short for Heads Up Display, is where you'll find information about your hero and other important game information.
+Description of HUD Elements
+Radiant Heroes and Dire Heroes - A portrait of each hero in the game is placed here. If a hero is dead or disconnected, their portrait changes. The time left before a dead hero respawns is also displayed here.
+Clock - The game clock which measures how much time has elapsed.
+Minimap
+[www.dota2wiki.com]
+- A small version of the entire map showing areas where you and your team have vision. Heroes and buildings that you and your team have vision of will show up on the minimap.
+Left-clicking an area on the minimap will move your camera there.
+Experience Bar - Tracks how much experience your hero has gained. When this bar is full your hero will gain a level.
+Use Skill Point - Clicking this button allows you to spend skill points you've acquired through leveling your hero. Clicking an ability after clicking this button will spend a skill point on that ability.
+Attributes - In this section you can see specific numbers on your hero's three attributes, as well as your attack damage range, armor, and movement speed.
+Abilities - Shows which abilities are available for you to use and how many points you've put into them. You can also use abilities by clicking them here or by using the hotkeys.
+If you hover over these icons a detailed description of the ability will appear including information on its effects, manacost, cooldown, and duration.
+Hovering over an ability icon will also display a green ring around your hero which indicates the range of the ability, i.e. how close you need to be to your target.
+Creep Kills/Denies - Also known as your Creep Score (CS). This shows you how many last hits and denies you have made so far.
+Kills/Deaths/Assists - The number of kills and assists your hero has made, and how many times you've died.
+Inventory - The six items your hero carries go here and can be used from here or using their hotkey.
+Quickbuy - A feature that allows you to queue up an item and its components so they can easily be bought without having to open the shop.
+Buy Sticky - An item can be dragged here where it can be easily bought by right-clicking or using the Purchase Sticky hotkey.
+Use Glyph - Activates your team's
+Glyph of Fortification
+[www.dota2wiki.com]
+When activated makes all structures on your team invincible for 5 seconds.
+Any player can activate the glyph.
+It has a 5 minute cooldown between uses.
+Effects your hero is under from items and abilities are displayed above your health bar. For effects with a duration, the green border indicates how much time is left.
+Selecting Units and Hero Display UI
+For heroes with multiple units to control, their portraits will be displayed in the top right of the screen along with their health and mana bars. The portraits change to indicate whether the units are selected and if they are taking damage.
+Also note that when multiple units are selected, the attributes area of the HUD changes to information on your selection.
+Purchasing a buyback
+
+--- Subsection 10 ---
+Items
+When describing what items a particular hero should get, they are often broken down into the following categories:
+Starting Items - Items that a hero buys to begin the game.
+Core items - Items that a hero would always want to get in most games.
+Situational Items - Items that a hero might get if the particular game calls for it. Usually bought based on the enemy team's heroes and item choices.
+Luxury Items - Items that a hero would get if they're doing exceptionally well and have the gold  to buy them. These are most often bought in longer games.
+The item suggestions in the shop menu follow the same categorization and the order in which the categories have been listed is generally the order in which they should be purchased, i.e. buy core items before buying luxury items.
+Items have several defining characteristics.
+Consumable vs Non-consumable
+Consumable items are items that have a limited amount of uses. Some consumable items are used on single heroes such as Healing Salves and Mana Potions while others are meant to be placed on the map such as Observer Ward and Sentry Wards. Other consumable items have an area of effect such as Dust of Appearance and Smoke of Deceit which are used to reveal and conceal heroes.
+Active vs Passive
+Items can have active and passive properties. The active and passive effects that are possible on items fall under the same categories as those seen on hero abilities.
+Active item abilities can be used just as one would use an active ability on a hero.
+A passive ability on an item functions like a passive ability on a hero. Its effect is always on.
+See the earlier section on hero abilities for more detail on the type of effects items can have.
+Stat Bonuses
+Almost all items also give some sort of boost to certain hero properties. For every hero property such as stat attributes, damage, regeneration, armor, movement speed, etc. there are items that affect them.
+Basic, Upgrade, and Recipe Item
+Basic items are items that are not made from combining other items. These items are found in the Basic tab in the shop menu.
+Upgrade items are items that are made from combining other basic, upgrade, and recipe items.
+These items are found in the Upgrades tab in the shop menu.
+To purchase an upgrade item, one simply needs to purchase all its component items. Once all the component items and recipe item (if the upgrade item calls for it) are in a hero's inventory, they will automatically combine to form the upgrade item.
+Recipe Item
+[www.dota2wiki.com]
+Some upgrade items have a corresponding recipe item as one of their components. The recipe item alone does nothing. Their only purpose is to combine other component items.
+Notable Items
+These are some basic, important items that are frequently used in every game.
+(g stands for gold.)
+Town Portal Scroll or TP
+[www.dota2wiki.com]
+(100g) - A consumable item that allows a hero to teleport to any allied building on the map. This item is cheap and should be carried at all times. It can be used to escape a dangerous area, defend a tower across the map, or to simply travel back to the fountain to heal or back to a lane to farm.
+Observer Ward
+[www.dota2wiki.com]
+(150g) - A consumable item that can be placed on the map providing vision of the area around it.
+Sight range of 1600 units day and night.
+Essential for maintaining vision and control of the map, allowing your team to spot enemy heroes.
+Always try to  have these placed across the map as much as possible.
+Lasts 7 minutes after being placed, and disappear afterwards.
+Sentry Ward
+[www.dota2wiki.com]
+(200g) - A consumable item similar to Observer Wards.
+They do not provide very much vision, but they allow you to see invisible heroes and units in the area.
+Sight range of 70 units day and night.
+Their detection range is larger than the actual vision they provide.
+True sight
+[www.dota2wiki.com]
+range of 850 units.
+Lasts 4 minutes after being placed, and disappear afterwards.
+Animation showing an observer ward and sentry ward.
+Healing Salve
+[www.dota2wiki.com]
+(115g) - A consumable item that can be used for a quick burst of health regeneration. If attacked, however, the effect of the salve is canceled.
+Tango
+[www.dota2wiki.com]
+(125g) - A consumable item that is used to eat trees and regenerate health. Tangos heal slower than healing salves, but are not dispelled if damage is taken.
+How to use a tango.
+Most items can also be dropped and picked up by other players, or directly given to other players. This does not mean other players can use those items, although consumables can be shared.
+To drop an item on the ground, simply left-click drag and drop the item from your inventory to the ground.
+To give an item to another hero, left-click drag and drop the item from your inventory to the hero on the screen.
+To pick up an item on the ground, right-click it.
+Three items that have been dropped on the ground.
+Some upgrade items can disassembled into their component items.
+Items with a recipe as a component cannot be disassembled, and only a few non-recipe upgrade items can be disassembled.
+To disassemble an item, right-click it in your inventory and select "Disassemble". The component items that the item was made from will be dropped on the ground.
+Items that should be bought at the beginning of the game are discussed in a later section.
+For those that want to know about almost every item in the game, here's an hour long video by Purge.
+
+--- Subsection 11 ---
+Runes
+Runes are special items that only appear on the ground at two locations in the river.
+There are several different types of runes, and they may be picked up by any hero. Picking up a rune consumes it, granting the hero a special buff for a short period of time.
+A rune spawns every 2 minutes starting at 0:00 at each of the two rune spawn locations. One of the spawned runes is always a bounty rune and the other will be of another random type.
+Types of
+Runes
+[www.dota2wiki.com]
+:
+Regeneration - Quickly regenerates a hero's health and mana. The effect is canceled if the hero takes damage or reaches full health and mana. Last 30 seconds.
+Invisibility - Makes the hero invisible to enemy heroes. When the rune is activated, it takes 1 second for the invisibility to take effect, known as "fade time". The effect is canceled if a hero performs an attack, uses an item, or uses an ability. Last 45 seconds.
+Haste - Grants the user maximum movement speed. Lasts 30 seconds.
+Illusion - Creates two
+illusions
+[www.dota2wiki.com]
+of the hero that uses it. Lasts 75 seconds.
+Double Damage - Grants your hero and your illusions within a small area +100% damage. Only affects your base damage and damage which comes from attributes, not pure damage from items. Lasts 45 seconds.
+Bounty - Gives your hero experience and gold. The experience and gold gain increases based on the game time.
+Storing Runes
+Rather than picking up and immediately consuming runes, runes may be stored in a
+bottle
+[www.dota2wiki.com]
+:
+A bottle is a regeneration item which a hero can drink from 3 times before needed to be refilled at the Fountain. Drinking from a bottle, regenerate's a hero's health and mana for over 3 seconds. Simply returning the bottle to the Fountain, whether using a courier or a hero will refill it.
+Runes may be stored inside a bottle by right-clicking the rune while having a bottle in your inventory. Once a rune has been stored in a bottle, it can be activated at any time by activating the bottle. But rather than consume one of the bottle's 3 regeneration charges, the rune will be consumed instead.
+An inventory containing an empty bottle, full bottle, and bottle with an invisibility rune inside it.
+In addition, storing and then using a bottled rune will refill the bottle completely. Therefore, to get the most out of your bottle you can drink all its remaining charges before bottling a rune. After you use the rune, you'll have a full bottle again without having to refill it at the Fountain.
+However, bottled runes will only last until it is time for the next rune to spawn. If they have not been used by then, they will automatically be consumed and activated.
+
+--- Subsection 12 ---
+Types and Locations
+Main shop is located next to the Fountain. Most items can be purchased here.
+Secret Shop
+[www.dota2wiki.com]
+Offers a selection of some of the most expensive items in the game most of which cannot be bought in any other shops.
+Items found in the secret shop are often components used to make more powerful items.
+Side Lane Shop
+[www.dota2wiki.com]
+- Offers a smaller selection of items than the shop in the Fountain, but it is conveniently placed in the side lanes.
+Navigating the Shop Menu
+To purchase an item from a shop, first you must send your hero to where the shop is.
+Then there are several ways to open the shop menu.
+Pressing the Open Shop hotkey on your keyboard.
+Clicking the Shop button on the HUD located on the bottom right. The button will change to indicate when you're in range of a shop.
+Near a shop.
+Too far from a shop.
+Clicking the shopkeeper unit in the game.
+Using the shop can be overwhelming and confusing at first, because of the number of different items available.
+Some things to note about purchasing items:
+Most items can be sold back to the shop. To sell an item, right-click it in your inventory or stash and select "Sell".
+If an item is sold back to the shop within 10 seconds of purchasing it, you get a 100% gold refund.
+After 10 seconds, you can sell back items for 50% of their gold value.
+To purchase items from the side lane shops and secret shops, you must be within a certain distance of them and you must have space in your inventory.
+If you try to purchase an item from the base shop and you are too far away or your inventory is full, the item will be stored in your stash and not your hero's inventory.
+Going back to the Fountain/shop will allow you to move items between your stash and inventory
+Below is what the shop menu looks like and a description of its features and elements.
+List and Grid Views
+There are two different types of views you can use and you can switch between them by clicking the different view icons in the top right. However, it is recommended that new players stick with the default list view since it shows the item name.
+Basics and Upgrades Tabs and Buttons
+Items in the shop are divided into two main tabs, Basics and Upgrades. As shown in the picture, the Basics tab has four columns of items. In Grid View, all four columns are shown at once on the menu. In List view only one column is shown at a time, but the name of the item is also shown next to its icon. Items in other columns can be viewed by pressing one of the four buttons below the Basics tab.
+Basics
+[www.dota2wiki.com]
+- Columns 1-4
+Consumables
+Attributes - Stat boosting items
+Armaments - Damage and armor related items
+Arcane - Miscellaneous utility items
+The Upgrades tab is laid out similarly, except there are six columns of items instead of 4.
+Upgrades
+[www.dota2wiki.com]
+- Columns 1-6
+Common - Mostly composed of relatively cheap items that provide more stats. 3 boot upgrades are here.
+Support - Items that help your team or yourself whether it's through heals, auras, or other protective buffs. 2 boot upgrades are here.
+Caster - Magic damage and intelligence items. All have active abilities, except
+Aghanim's Scepter
+[www.dota2wiki.com]
+which modifiers some ultimate abilities
+Weapons - Damage items
+Armor - Items for improving survivability
+Artifacts - Most of these items have Unique Attack Modifiers
+Search Bar
+Below the view options is a search bar. You can enter a full or partial item name and the menu will display a list of results. Players should take advantage of this feature when they cannot find the item they are looking for.
+Suggested Items
+On the left side of the menu there is a panel for suggested items. Each hero has a set of suggested items and they are divided by into sections according to when you should get them. You can also customize these suggestions with your own item builds.
+Purchasing an Item
+The controls for purchasing an item are fairly simple.
+You can left-click any item icon in the shop menu to see what its component items are and also what further items it can be upgraded into. This will be displayed in a small item tree at the bottom of the shop menu.
+Right-clicking an item icon anywhere in the shop menu will purchase that item if you have enough gold for it.
+If it is an upgrade item and you have already purchased some of the components, right-clicking the item will only purchase the components you are missing, so you do not have to worry about buying duplicate copies of component items.
+You can left-click and right-click the item icons in the item tree as well with the effects being the same as described above.
+Items in the item tree that you already own will have a small checkmark in the top right corner.
+The picture above shows the shop after an item was left-clicked in the grid.
+Things to note:
+Items the player can afford are highlighted with a gold border in the shop menu.
+The particular item in the picture is composed of 3 other items, one of them being a recipe item.
+The player already owns one of the other component items.
+The item can be further upgraded into another item.
+Sticky Buy
+This feature allows you to bind an item to the sticky slot on your HUD without having to open up the shop. After dragging an item from the shop menu to your sticky slot, all you need to do is right-click it to purchase the item or use the Purchase Sticky hotkey.
+Town Portal Scrolls
+[www.dota2wiki.com]
+are stickied by default. If you sticky buy an item away from a shop, it will be stored in your stash.
+Quickbuy
+Items can be placed in your quickbuy bar where they can be purchased later. To add an item to your quickbuy bar simply hold shift and left-click the item. You can also drag an item into your quickbuy bar. If it's a basic item it will be put in your quickbuy bar. If it's an upgrade item, its components will be put in the quickbuy bar. Each item in the quickbuy area can be purchased by right-clicking it or using the Purchase Quickbuy hotkey. Items are removed from your quickbuy as they are purchased.
+If you quickbuy an item away from a shop, it will be stored in your stash.
+An empty quickbuy, an item's components in the quickbuy, and a few items purchased from the quickbuy.
+
+--- Subsection 13 ---
+Animal Courier
+The
+Animal Courier
+[www.dota2wiki.com]
+is an item that one person on each team should buy every game. A courier's function is to buy and deliver to your hero without your hero having to travel to a shop.
+It is sold in the shop for 120 gold.
+When activated by the person that bought it, the courier is deployed and remains as a permanent unit. Control of the courier is shared by all teammates, so anyone can order it to move and use its abilities.
+Without a courier, purchasing an item and putting it in a hero's inventory requires the hero to travel to a shop. However, a courier does that for the hero. If the courier is near a shop, a player can purchase an item at the shop with the courier selected and the item will be placed in the courier's inventory. The courier can then be ordered to deliver the item to the hero without the hero having to move at all.
+Using the courier to ferry items from a shop to a hero is incredibly useful, because it saves a hero travel time, allowing them to stay in lane to farm and gather experience or perform other tasks on the map such as ganking or taking a tower. It is especially useful in the early game, where you want to stay in lane as long as possible.
+Having your hero make too many trips to the fountain to heal and pick up items can result in your hero being underleveled and underfarmed compared to other players.
+Flying Courier
+There is an upgrade for the animal courier that can be purchased which turns it into a
+Flying Courier
+[www.dota2wiki.com]
+. It costs 220 gold.
+Flying couriers move faster and can fly over cliffs and walls which an animal courier would have to walk around. It also has an ability which can be activated to give the courier a short speed burst.
+Courier Usage
+Couriers should be kept close to a shop when not in use. This usually means just keeping it in your team's Fountain where the main shop is accessible. If an item from the Secret Shop is required, then the courier can be moved there.
+Don't let the courier die. Kill the enemy's courier whenever the opportunity arises.
+Care should be used when handling the courier, because it can be killed by enemies. When killed, it rewards
+every
+player on the enemy team with 175 gold, a very signfiicant amount. For comparison, consider that Tier 1 towers give 160 gold to each player when killed.
+A dead courier will respawn after 3 minutes and any items it was carrying are inaccessible until it respawns. Because of the gold bounty and the potential to delay a team from getting items, couriers are high priority targets.
+When using the courier you should always be aware of where it is and keep it away from dangerous areas where heroes might be. Always send it back to base when it is done delivering items.
+Couriers can also transfer items to and from your stash.
+Courier HUD
+Team doesn't have a courier..
+Team has an animal courier or flying courier.
+There are buttons to select the courier, deliver items, and activate speed burst if it's a flying courier.
+While your courier is delivering items to your hero.
+When your courier is returning back to the Fountain.
+By using these buttons along with some hotkeys, one does not even need to move the screen away from their hero to use the courier, buy items with it, and have it deliver items to your hero.
+Using the Courier Walkthrough
+Here's a common sequence of actions one would perform to buy an item using the courier and have it transfer them to your hero.
+F2 - Select the Courier.
+Make sure the courier is at the shop where the item you need can be bought.
+Q - Return to Base hotkey to send your courier to the base shop.
+W - Go to Secret Shop hotkey to send your courier to the secret shop.
+F4 - Open the Shop.
+Purchase your item.
+R (Optional) - Use Speed Burst.
+F3 - Courier Deliver Items.
+
+--- Subsection 14 ---
+Hotkeys
+Hotkeys allow you to make the most out of your hand on the keyboard. It frees your mouse to perform more important actions, and using hotkeys is much faster than using the mouse and going through the HUD to perform actions.
+Navigating the Settings Menu
+You can modify your key bindings by clicking the gear in the upper left corner of the main menu.
+Unit Actions
+Move - Order your currently selected unit to move by pressing this key and then left-clicking where you want to go with the mouse.
+Right-clicking the ground will also order your hero to that destination.
+If you press move and haven't selected a target yet, you can cancel the order using right-click.
+Attack Move - Order your currently selected unit to attack enemy heroes, creeps, and buildings by pressing this key and then left-clicking the target.
+Right-clicking an enemy will also order your hero to attack that target.
+If you press attack move and haven't selected a target yet, you can cancel the order using right-click.
+Attack Move must be used to perform a deny on an allied creep or hero. Press the Attack Move key (default 'A') and then left-click your target.
+Stop - Orders your currently selected unit to stop.
+Hold Position - Disregard for now.
+Select Hero - Brings up the hero in the HUD. This key can be tapped twice to center the camera over your hero.
+Select Courier - Brings up the courier in the HUD. This key can be tapped twice to center the camera over your courier.
+Courier Deliver Items - Combines the Retrieve Items and Transfer items into one order. Sends your courier back to the fountain to transfer all items in your stash to its inventory and then sends the courier to your hero where it will transfer all items in its inventory to your hero.
+Select All Other Units - Can be useful when controlling multiple units. Not needed for most heroes.
+Action Item - Disregard. Cosmetic effect that has no impact on the game.
+Taunt Item - Disregard. Cosmetic effect that has no impact on the game.
+Control Groups - Allows players to define their own custom select unit keys on the fly during a game.
+Most useful for heroes that summon and control several different units. Control groups allow players to assign units to control group keys and can be thought of as customizable select hero and select courier hotkeys. Once a unit or several units have been assigned to a control group, pressing that control group key will select them.
+Hero Abilities
+Ability 1 to 5 - Pressing these keys is the same as clicking the corresponding abilities in the HUD. Most heroes only have 3 normal abilities excluding their ultimate, so only the first 3 keys will be used.
+Ability Ultimate - Pressing this key is the same as clicking your hero's ultimate in the HUD.
+Ability Learn - Pressing this key is the same as clicking the Level Up button in the HUD located above your hero's portrait.
+Upgrade Stats - Pressing this key is the same as clicking the attributes/stats area in the HUD to level up your Bonus Attribute.
+The Ability Learn key or Level Up button must be pressed before you can use this.
+Autocast 1-5 & Ultimate - Certain hero abilities can be set to automatically be used. Disregard for now.
+Courier Abilities
+Make sure to have your courier selected before using these keys. Pressing the following keys is the same as clicking their corresponding ability icon in the HUD.
+Return to Base - Sends the courier back to the Fountain
+Go to Secret Shop - Sends the courier to the Secret Shop on your team's side of the river, i.e. the Secret Shop at the top for Radiant and the Secret Shop at the bottom for Dire.
+Put Items In Stash - Sends the courier back to the Fountain where it will transfer all the items it is carrying to your stash.
+Retrieve Items - Sends the courier back to the Fountain where it will transfer all the items in your stash to its inventory.
+Transfer Items - Sends the courier to your hero where it will transfer all the items it is carrying to your hero's inventory. After the transfer, the courier will automatically travel back to base.
+Speed Burst - Only accessible on Flying Couriers. Activating this ability makes the courier fly faster for a short period of time.
+Items
+Pressing the Inventory hotkeys is the same as clicking the corresponding slots in your inventory.
+Inventory 1-3 corresponds to the top row of slots in your inventory.
+Inventory 4-6 corresponds to the bottom row of slots in your inventory.
+Shop - Opens the shop menu. The same as clicking the Shop button on the HUD.
+Purchase Quickbuy - Buys items you have queued to your quickbuy. The same as right-clicking an item in the quickbuy area on the HUD.
+Purchase Sticky - Buys the item you have set to your sticky. The same as right-clicking the sticky item on the HUD.
+Take Stash Items - Transfers all items in your stash to your inventory. Must be near the base shop to use it. The same as clicking the "Grab All" button in the stash HUD.
+
+--- Subsection 15 ---
+Launch Dota 2.
+Press the Play button at the top center.
+Select Find a Match to play a game against other people.
+It is recommended that new players play their first game against bots. Instead of selecting Find a Match, select the Find a Co-op Bot Match right under it instead. Play against bots until you're comfortable with the basic controls, game mechanics, heroes, abilities, and items.
+Bots can last hit very well, especially at higher difficulties. They also chain their stuns and disables.
+After the laning phase, they tend to group up and will attack and defend as a team.
+Even if you can't beat bots, you can still move on to play matchmaking against real people once you've understood the game mechanics, controls, and basic strategy.
+Select the game modes you want to play and the regions you want to play in under Matchmaking Settings at the bottom.
+There will also be a bot difficulty option if you're playing a co-op bot match. Start with passive bots if you're just trying to get a feel for the controls and work your way up to Hard or Unfair for more of a challenge.
+Press the Find Match button in the center.
+When a match is found you will be asked to accept. You will begin to load into the match when all ten players have accepted.
+Everyone has two minutes to load into the match.
+If someone fails to load, the match is canceled and it will automatically begin searching for another match.
+You've entered your first game and everyone has loaded. Now the next thing you must do is pick the hero you'll be playing.
+The hero selection phase begins once all players load into the match.
+The hero layout, hero pool, and order in which players select their hero depends on the game mode.
+Important Note:
+Do not leave games prematurely. Players that abandon a game will be put into a separate low-priority matchmaking pool consisting of other "leavers". Players in low-priority will only be matched against other low-priority players. Having low-priority status can last up to a day. Always allow 45 minutes to an hour when playing a game to avoid having to abandon games.
+Game Modes
+Game modes
+[www.dota2wiki.com]
+available in matchmaking:
+You can select multiple game modes when searching for a game.
+Limited Heroes
+Players can only choose from a pool of 20 heroes. Otherwise, it is the same as All Pick mode.
+Highly recommended mode for new players, because you can learn the game without being overwhelmed by all the different heroes.
+The heroes are Bounty Hunter, Death Prophet, Dragon Knight, Drow Ranger, Juggernaut, Lich, Lion, Omniknight, Razor, Sand King, Skeleton King, Sniper, Sven, Tidehunter, Vengeful Spirit, Viper, Warlock, Windrunner, Witch Doctor, and Zeus.
+All Pick (AP)
+Each player selects a hero from the entire hero pool.
+Once a hero is chosen, no one else can pick that hero unless the player decides to re-pick.
+There is a random hero option during hero selection.
+Randoming grants an extra 200 starting gold (825 total).
+Players can re-pick a hero during hero selection if they are unsatisfied with their original selection regardless of if it was randomly or manually selected.
+Re-picking a hero removes the random bonus gold and incurs an additional 100 gold penalty (525 total).
+Single Draft (SD)
+Each player gets three random heroes to choose from, one for each attribute (strength, agility, intelligence).
+Captain's Mode (CM)
+Each team is assigned a Captain, who makes all the hero selections for the team. Captains take turns banning and picking heroes from the pool.
+This is the mode is used in competitive play.
+Random Draft (RD)
+Players take turns selecting a hero from a shared pool of 20 random heroes. You will be told when it's your turn to select.
+Least Played (LP)
+Players can only choose heroes from  a list of their least played heroes.
+Great for learning new heroes since everyone will be on equal footing
+Randoming grants an extra 250 starting gold (825 total).
+All Random (AR)
+Each player is randomly assigned a hero.
+Since every player randoms, everyone gets an extra 250 starting gold (825 total).
+All modes in matchmaking are available in private lobbies.
+Modes available only in private lobbies:
+Reverse Draft
+Mid Only
+Random gold is given in the All Pick, All Random, and Least Played game modes.
+
+--- Subsection 16 ---
+You've entered your first game and everyone has loaded. Now the next thing you must do is pick the hero you'll be playing.
+Things to note:
+The hero selection phase begins once all players load into the match.
+The hero layout, hero pool, and order in which players select their hero depends on the game mode.
+In All Pick, any player can freely choose any hero. But once a hero is chosen, no one else can pick that hero.
+Some things to consider when selecting a hero
+Is the hero difficult to play?
+What does my team need?
+Team Composition
+During hero selection you and your team should considering the following:
+Who is going mid and with what hero?
+Is anyone playing a jungle hero?
+If so, don't pick any more jungle heroes.
+Have someone else pick a hero that is good at playing alone in a sidelane. These are generally heroes with good escape abilities.
+Who is carrying? You don't want more than one hard carry on your team, or else your team will be too weak during the early and mid game.
+Who is supporting? A support hero should go with your carry in lane.
+How is your teamfight, ganking, and pushing ability? Your lineup will not always excel in all three areas. What's important is that you play to your team's strengths.
+What disables do we have? More is better.
+Avoid double melee lanes.
+Dual stun/disable lanes can be very strong with their ability to get early kills.
+Good Heroes for Beginners
+The following heroes are recommended for beginners, because their abilities are simple to use and easy to understand and their play-style is relatively simple. They either have good survivability, can deal large amounts of damage, have good disables, or can contribute to teamfights easily.
+Hero Name - Primary Attribute - Roles
+Skeleton King
+[www.dota2wiki.com]
+- Strength - Melee, Durable, Carry, Disabler
+Only 1 active ability, which is a stun.
+Ultimate is basically a free Aegis when off cooldown.
+Lich
+[www.dota2wiki.com]
+- Intelligence - Ranged, Support, Lane Support, Nuker
+Relatively high base movement speed.
+4 active but easy to understand and use abilities.
+Plenty of mana to use spells, because of second ability.
+Strong magic damage ultimate.
+Sven
+[www.dota2wiki.com]
+- Strength - Melee, Disabler, Initiator, Carry, Support
+3 easy to use active abilities.
+First ability is a good AoE stun.
+Second ability is a passive cleave making it easier to farm.
+Third ability buffs teammates in an AoE, giving movement speed and armor.
+Ultimate is a simple damage buff
+Tidehunter
+[www.dota2wiki.com]
+- Strength - Melee, Initiator, Durable
+2 simple active abilities
+First ability does damage to a single target and applies a debuff.
+Third ability does damage in a small AoE and applies a debuff.
+Ultimate is a huge 1025 unit radius AoE stun that does damage. Very good for teamfights.
+Drow Ranger
+[www.dota2wiki.com]
+- Agility - Ranged, Carry
+2 active abilities and 2 passives, one of which is an aura.
+Passives allow Drow to do a lot of damage.
+Venomancer
+[www.dota2wiki.com]
+- Agility - Ranged, Support, Nuker, Initiator, Pusher
+Good damage over time abilities
+First ability is a strong slow that hits enemies in a line.
+Can place plague ward summoned units with third ability, which are good for pushing and defending. Short cooldown, and cheap mana cost.
+Powerful ultimate that does damage over time and prevents healing.
+Lion
+[www.dota2wiki.com]
+- Intelligence - Ranged, Disabler, Nuker, Lane Support, Support
+2 good disable abilities, one is a line stun and the other a hex.
+No mana problems, because second ability is a single target mana drain.
+Ultimate is a very powerful single target burst damage.
+Ogre Magi
+[www.dota2wiki.com]
+- Intelligence - Melee, Nuker, Disabler, Durable
+Good, simple single target magic damage abilities
+First ability is a single target stun that does damage.
+Second ability is a single target slow that does damage.
+Third ability is a single target buff applied to allies that increases movement and attack speed.
+Passive ultimate which gives chance for other abilities to be applied multiple times when they're used.
+Juggernaut
+[www.dota2wiki.com]
+- Agility - Melee, Carry, Pusher
+First ability deals good magic damage to those around him for the duration of the ability.
+Also makes Juggernaut immune to magic damage while using the ability.
+Second ability summons a healing ward which heals the hero and allies in an AoE
+Passive third ability which gives chance to deal double damage on an attack.
+Ultimate deals strong physical damage to an enemy through multiple sword slashes
+Makes Juggernaut invulnerable for the duration of the ability.
+Heroes to Avoid as a Beginner
+New players are recommended to avoid playing these heroes, because they require controlling multiple units or have a high burden of knowledge involving their abilities (Invoker).
+Chen
+[www.dota2wiki.com]
+- Micro-intensive hero (requires controlling multiple units and using abilities on different units). Most effective ganking and pushing very early, but falls off very quickly in terms of effectiveness, and new players generally don't have the experience to win a game early and prevent games from dragging on.
+Invoker
+[www.dota2wiki.com]
+- 10 different active abilities to learn which are the combinations of 3 different elements, means Invoker has a high learning curve and is difficult to master.
+Lone Druid
+[www.dota2wiki.com]
+- Summons a bear unit. Having to control another unit in addition to a hero is something newer players should avoid.
+Meepo
+[www.dota2wiki.com]
+- Each point into Meepo's ultimate gives the player a clone of Meepo. If any clone dies, all the clones die including the main hero itself.
+Visage
+[www.dota2wiki.com]
+- Ultimate summons two flying units.
+Earth Spirit
+[www.dota2wiki.com]
+- High skill ceiling, synergetic abilities based on manipulating summoned rocks.
+
+--- Subsection 17 ---
+Once you've selected a hero and the hero selection timer reaches zero, you can hit Play to enter the game where you will spawn in your own Fountain.
+The first creep wave spawns 90 seconds after the hero selection timer reaches zero.
+During this time you want to do the following things:
+Buy your starting items
+Spend your first skill point on an ability
+Place an early observer ward if you've purchased one.
+Make your way to where you'll be playing laning phase. This will either be a lane or jungle.
+You probably won't see this in your games, but it's interesting to note that in high level competitive games, teams often group up and move across the map together to catch a team off-guard by killing Roshan or looking for a gank or teamfight at level 1 before they split up and go to their respective lanes.
+Once the in game clock reaches zero after 90 seconds have passed a horn will sound and the first creep waves will spawn from each of your barracks and they will head down each lane.
+The game clock will count upwards from now on, keeping track of how much time has elapsed.
+Starting Items
+One of the first things you'll want to do before the first creep wave spawns is purchase your first items.
+For beginning players, the suggested starting items in the shop menu are good enough and should be followed.
+Important Note:
+Someone on your team should always purchase a courier as a starting item. Ideally a support should buy it. However, if no one on your team has bought a courier, you should purchase one no matter what.
+The rest of this section will just discuss some of the reasons and factors behind certain starting item choices. It's not a high priority to learn what follows, but it will help in tailoring your starting items to each particular game and coming up with starting items for heroes you're unfamiliar with.
+Factors such as the hero you're playing, who you're playing against, where you'll be laning, and how you'll be playing your hero all factor into what a hero's optimal starting items are.
+In general, you should look to get health regeneration and cheap stat boosting items. Regeneration such as healing salves, tangos, and clarities will allow you to stay in lane longer during the laning phase and put up with harassment from enemies. Once enough regen items have been purchased (usually a tango and a salve or two tangos), cheap stat items are bought to fill up your inventory, giving your hero needed boosts in their attributes which raise your health and mana pools and damage. These make your hero as strong as possible starting out in lane to give you an advantage over your enemy.
+If you're playing a support role, you and another support on your team should buy a set of observer wards and a courier.
+Three +1 stat items vs one +3 stat item
+You want to buy several cheap stat items over a single larger stat item, because cheaper items provide more stats for the amount of gold you're spending compared to their more expensive equivalents. The best item for this is the
+Iron Branch
+[www.dota2wiki.com]
+. It provides +1 to all three attributes for only 50 gold. When buying a larger stat item, you're paying a premium to save inventory space. But at the start of the game inventory space is not a concern since, your entire inventory is empty.
+Other commonly picked up items to start the game
+Quelling Blade
+[www.dota2wiki.com]
+(225g) - 32% more damage against creeps for melee heroes, 16% more damage against creeps for ranged heroes.
+Commonly picked up melee carries to help them last-hit in lane.
+Also has an active ability which allows a hero to cut down a tree. Useful for making paths in the jungle.
+Stout Shield
+[www.dota2wiki.com]
+(250g) - 60% chance to block 20 damage as a melee hero, 10 damage as a ranged hero.
+Commonly picked up on melee heroes that will be taking harassment from a ranged hero in lane.
+Ring of Protection
+[www.dota2wiki.com]
+(175g) - +2 armor for the hero. Helps reduce damage from creep and hero harassment.
+Can be combined with a
+Sage's Mask
+[www.dota2wiki.com]
+(325g) to create a
+Ring of Basilius
+[www.dota2wiki.com]
+Heroes that want to get a ring of basilius as one of their early items usually buy the ring of protection as a starting item. They can then complete the ring of basilius while in the lane at the Side Lane shop where the sage's mask can be bought.
+Also a component of
+Tranquil Boots
+[www.dota2wiki.com]
+. (Boots are described in the Game Phases Overview section)
+Gauntlets of Strength
+[www.dota2wiki.com]
+,
+Slippers of Agility
+[www.dota2wiki.com]
+,
+Mantle of Intelligence
+[www.dota2wiki.com]
+(150g) - These items give +3 to one attribute. These are not as cost effective as iron branches, but they are often bought if the player plans to upgrade them, since they are components of several other cheap items.
+Circlet
+[www.dota2wiki.com]
+(185g) - Gives +2 to all attributes. More than 3 times the cost of an iron branch, like the +3 stat items it is bought if there are plans to upgrade it. It may also be bought if a player doesn't have room for two iron branches, but can afford the circlet.
+A DotaCinema video explaining what you're looking for in choosing starting items.
+
+--- Subsection 18 ---
+Dota 2 is a team game, and communicating well is a key factor to having success.
+Dota 2 has five features that allow players to communicate with each other.
+Voice - If you have a microphone, this is the best way to communicate with your team. The default voice key is G.
+Chat Message - You can send messages to your teammate by pressing enter, typing out a message, and then pressing enter again to send.
+Ping - Pinging a location marks a location on the map with an exclamation point and an accompanying sound to alert your team. A ping can be done by holding the alt key and left-clicking the minimap or the ground. Buildings and heroes can also be pinged.
+Caution Ping - A warning ping that plays a different sound and displays an X. Use these pings to alert your of possible danger. To use a caution ping, hold the control and alt keys and left-click the minimap or ground.
+Minimap Drawing - By holding the control key, you can draw on the minimap using left-click. This is useful for showing your team a path you want them to take.
+Drawings on the minimap fade away after a few seconds.
+Chat Wheel - Allows you to send predefined messages through team chat without having to type them out. Activate the chat wheel using the chat wheel key (default Y) and then hover the mouse over one of the messages and release.
+Common chat abbreviations and slang:
+missing, mia, ss - Warns your team that an enemy is missing from your lane. You can also specify the hero and lane for more detail, e.g. "lich mia bot".
+re - Short for returned. It means the missing enemy has returned to lane, e.g. "re bot".
+b - Short for back. Tells your teammates that they should retreat.
+care - Tells your team they should be careful and watch out for ganks by the enemy team.
+oom - Out of mana. Tells your teammates you don't have enough mana to cast your abilities.
+rax - Barracks
+bd - Backdoor
+cd - Cooldown
+cs - Creep Score. The number of creep last hits and denies.
+chicken- Courier
+crow - Flying courier
+tp - Teleport
+
+--- Subsection 19 ---
+The game has started. So what should you know and expect to happen from minutes 0 through 40 and beyond?
+Early Game Description
+As a consequence of the experience, last hit, and deny mechanics you will find that heroes will try to be in the area where creeps are fighting and will try to get last-hits, denies, and experience.
+Ultimately during the laning phase you want to gain more gold and experience than the other team and there are many ways of accomplishing which you will learn as you gain more experience.
+One of the supports on a team should upgrade the courier into a
+Flying Courier
+[www.dota2wiki.com]
+within the first few minutes of the game.
+One of the first items you'll want to buy after you enter lane are
+Boots of Speed
+[www.dota2wiki.com]
+(450g) . Boots increase your hero's movement speed and can be upgraded. Upgraded boots provide extra stats and have active abilities.
+(total gold cost given)
+Tranquil Boots
+[www.dota2wiki.com]
+(975g) - When activated, heals the hero for 170 health over 5 seconds. Works similar to a healing salve.
+Phase Boots
+[www.dota2wiki.com]
+(1350g) - When activated, grants a boost of movement speed and allows the hero to walk through units for a short period of time.
+Power Treads
+[www.dota2wiki.com]
+(1400g) - Grants +8 to one of the three hero attributes. Activating the boots switches between attributes.
+Arcane Boots
+[www.dota2wiki.com]
+(1450g) - When activated, grants mana to yourself and allies in the area.
+Boots of Travel
+[www.dota2wiki.com]
+(2450g) - When activated, allows the hero to teleport to any allied building or unit. Shares cooldown with
+Town Portal Scrolls
+[www.dota2wiki.com]
+.
+All the components for Phase Boots, Arcane Boots, and Power treads can be bought at a side lane shop. This means you can purchase and upgrade your boots without having to leave a lane.
+The only component of Tranquil Boots that cannot be bought at a side lane shop is the Ring of Protection.
+The
+Magic Wand
+[www.dota2wiki.com]
+(500g) is another excellent item that most heroes should buy every game.
+It is made of a
+Magic Stick
+[www.dota2wiki.com]
+(200g),
+3
+Iron Branches
+[www.dota2wiki.com]
+(3x50g), and the
+Magic Wand Recipe
+[www.dota2wiki.com]
+(150g).
+Most heroes start the game with several iron branches, which makes it easy to complete the wand.
+A magic stick gains a charge whenever an enemy hero uses an ability around you. When the magic stick is activated, all charges are consumed and the hero is instantly restored 15 health and mana per charge.
+A magic stick can have up to 10 charges.
+The magic wand functions the same way as a magic stick, but can have up to 17 charges.
+Do not forget to use them. Saving charges and using them at the right time can save your life.
+Mid Game Notes
+As teams gain levels and items on their heroes, they will begin to move their heroes around the map, coordinating ganks and pushes.
+An extremely helpful item for quickly moving your team undetected across the map, through the enemy jungle, or into the Roshan pit is the
+Smoke of Deceit
+[www.dota2wiki.com]
+(100g).
+When activated, it places a buff which makes yourself and all allies in a 1200 unit radius invisible for 40 seconds and grants them extra movement speed.
+A player's invisibility and movement speed buffs are lost if they get within 1025 units of an enemy hero or tower.
+Smoked units are always hidden until the buff is removed. They cannot be seen on the map or minimap even with detection such as sentry wards.
+You will often see a hero in the middle lane leave and move to one of the sidelanes to try to get a kill.
+You will also see players start to group up and move together to take a tower in one of the lanes or to kill anyone who might be farming the jungle.
+Large teamfights, involving many players start to occur as teams fight for map control.
+Late Game Notes
+Outcomes of teamfights can decide the game, as respawn times get longer and heroes are able to take down buildings and kill roshan faster.
+Losing a teamfight can mean a lost barracks or roshan kill.
+Carry heroes peak in strength while others fall off.
+
+--- Subsection 20 ---
+Ending a Game
+At some point in the game, your team should look to make a push into the enemy base to take their tier 3 towers, barracks and eventually the Ancient.
+In many games, a team will lose even after dominating the early and mid game, because they aren't pushing and looking to destroy a set of barracks when they have the chance to. You don't want to drag a game into the late game phase when you don't need to, especially if the enemy has stronger late game heroes.
+Moving into the enemy's base is called taking the high-ground, because of the ramps that are in front of the barracks.
+There are several strategies and tactics for doing this. Some of them are:
+Roshan and Aegis - It's a good idea to kill Roshan and pick up the aegis before trying to push into the enemy base, especially if you're trying to force a teamfight inside the base.
+Teamfight - One of the most common ways to push into an enemy base is to just win a teamfight and push while some of the enemy heroes are dead.
+If possible, look to teamfight in an area where you have an elevation advantage, i.e. you're uphill while they're downhill.
+It's harder to win a teamfight that occurs inside the enemy base. They have the elevation advantage as well as the towers to help them. They are also close to their Fountain, so they can heal up or buyback if they have died and quickly return to the fight. Unless you're confident you can completely overpower the enemy team, you should avoid fighting inside their base.
+Gank - Similar to teamfighting, the idea is to pick off one or more enemy heroes, and then push while you have the numbers advantage.
+Slow push/siege - This involves chipping away at a team's tier 3 towers and barracks. This is a good tactic if you don't want to take the risk of teamfighting inside the enemy base or the enemy lacks a good way to initiate teamfights and you have the right lineup to siege buildings.
+When slow pushing, you want to keep applying pressure to the enemy tier 3 tower and slowly kill it from a safe distance outside the enemy base.
+This can be done when you have heroes with long range attacks and abilities that can damage buildings, or heroes that can summon a lot of units or illusions that can help attack buildings while you stand back and watch.
+This can be very effective if the enemy lacks AoE abilities that can quickly kill off your creep wave, summoned minion units, and illusions.
+Split push - If you have a hero with good mobility and pushing abilities, you can have them push and destroy buildings in another lane while the rest of your team engages in a teamfight or pushes a different lane across the map.
+Forces the enemy to split up and defend two different lanes, or completely ignore the buildings being destroyed in one lane.
+You can have four players on your team try to force and drag out a teamfight as long as possible. This serves as a diversion to give your remaining teammate time and space to split push a  lane and destroy buildings.
+It can also be used to slow push and siege, as you chip away at the buildings in two lanes.
+
+--- Subsection 21 ---
+When you play your first games of Dota 2, you're not going to have any idea what the majority of heroes do. Teamfights will happen and you'll get lost and confused, because you'll see things you've never seen before. You'll die and feed a lot. Rather than be overwhelmed by all the things you don't know, focus on what you do know and build upon that.
+Here are some things you should be looking at to get the most out of your games.
+Learn and practice basic mechanics. Many were covered in this guide so far, so start to master them.
+Some important mechanics you can practice during a game.
+Controlling your hero
+Using abilities
+Using items
+Using the shop
+Controlling the courier
+Learn some items. Start with basic starting items and items that are frequently bought in every game. From there you can start to learn additional items. Check other players' hero inventories and look at what items they bought and learn what they do.
+Learn the hero you're playing and the heroes you play against. It will take more than a few games playing against each hero to get to know them.
+Ask yourself these questions during and after games. Most questions can be answered using the in-game hero page.
+What are the names of the heroes I just played against?
+What did those heroes look like?
+How can their abilities help or hurt me? Take note of disables especially.
+What abilities did they use?
+What is their ultimate?
+What role do they fill and how are they played?
+Every death is a great learning experience. Your deaths will either be due to poor execution from fumbling with controls, not knowing another hero's abilities and their kill potential or not being aware of your own survivability and durability. All of these things will improve as you play, so analyze why you died and learn from it.
+After enough games of following this, you'll have learned all the basic controls in the game, all the heroes and their abilities, and all the items.
+Once you build a good working knowledge of the game, you can start to learn more hero specific, advanced, and situational strategies.
+XVRogue's School of Thought video on How to Learn
+
+--- Subsection 22 ---
+Here's a collection of tips you should keep in mind as you play.
+Do's
+Do carry a teleport scroll with you all the time.
+Do buy health/mana regeneration and cheap stat boosting items at the start of the game.
+Do use the courier to buy and deliver items. Purchase it yourself if you have to, because every team needs one.
+Do place wards. Vision keeps you and your teammates alive.
+Do watch the minimap and be aware of where enemy heroes are and if any are missing from the lane. They are probably out looking for kills.
+Do tell your teammates in voice or chat when enemy heroes have left your lane.
+Do help your team control the runes by going to one of the two spawns and guarding them before they spawn.
+Do try to help out your middle lane by ganking if you're playing a support on a side lane.
+Do stack before you pull.
+Do buy sentries, dust, and possibly a gem of true sight if there are enemy heroes that can go invisible. Such heroes can easily dominate a game when a team doesn't have the necessary detection, allowing the them to freely stalk and kill your team and then escape undetected.
+Do place an observer ward and sentry ward around Roshan before you and your team attempts to kill him. Knowing if the enemy team is coming is important. Buying a smoke of deceit and having your team smoke and go into the Rosh pit while invisible is even better.
+Do spend your gold if you know you're about to die. You might not be able to afford the item you want to get after you die, due to the gold loss on death.
+Using the Quickbuy and Sticky feature will allow you to buy items quickly.
+Don'ts
+Don't autoattack creeps unless you're trying to push the lane.
+Don't teleport in front of a tower when it is being pushed by several enemy heroes, you will get picked off easily. Teleport behind it or to another nearby structure and walk to the tower.
+Don't run through the river when you have no idea where the enemy team is. Take safer paths to get to your destination.
+Don't get the courier killed.
+Don't buy boots as a first item.
+Don't buy bottle as a first item. There are only a few situations when it is viable.
+Don't take unnecessary hits from creeps. The benefit of harassing a hero in lane is negated if you are taking just as much damage from enemy creeps.
+Don't overstay your welcome in the enemy team's base. If you've done some damage to their base and possibly taken a tower or barracks while a few of them were dead, but they're about to respawn, then it's time to retreat.
+Don't creep block the safe lanes at the beginning of the game. If you block too much you end up having the enemy creep wave so close to your tower that your tower starts attacking. It's more difficult to last hit with the tower hitting creeps. It also quickly kills of their creep wave meaning by the time your next creep wave comes your lane will be completely pushed towards their tower.
+Don't walk back and forth to your base too much. Use a teleport scroll to save time.
+Don't stand around doing nothing. Sometimes teams will stand on opposite sides of the river and stare at each other just waiting to see what the other team will do. Unless you're actively looking for a fight, or it's clear they're right at your doorstep about to attack a structure, go somewhere else and farm or push a lane.
+
+--- Subsection 23 ---
+This section describes previously mentioned game mechanics in a little bit more detail with more specific numbers. These are things a new player should not concern themselves with when first trying to learn the game, but should start to learn once they've understood the basics.
+Gold
+There are actually two types of gold which differ in how they're acquired and spent,
+Reliable and Unreliable Gold
+[www.dota2wiki.com]
+Reliable Gold - The gold awarded for any hero kill or assist.
+The item Hand of Midas and the ability Track also give reliable gold.
+Unreliable Gold - Everything else, i.e. the passive gold per second, creep kills, building kills, and Roshan kills
+Reliable gold is not lost on death.
+Each time you die you lose 30*(Your Hero Level) in unreliable gold.
+When purchasing items, all of your unreliable gold is spent first before your reliable gold is spent.
+Hovering over the gold display on the HUD will show you how much reliable and unreliable gold you have. It will also show you if you have enough money to purchase a buyback.
+Buyback
+Purchasing a buyback spends reliable gold first before unreliable gold.
+Buyback prevents gaining unreliable gold (creeps, neutrals, etc) until your normal respawn time finishes.
+When buying back, 25% of the remaining respawn time will be added to your next death.
+Denies
+Denied creeps only give experience in a 1000 unit radius, less than the 1300 unit experience radius.
+Towers
+When killed, the amount of gold rewarded to the enemy team depends on who got the last hit
+If last hit by a creep, the entire team gets gold
+If last hit by a hero, the entire team gets less gold, while the hero that got the last hit will receive bonus gold.
+Vision
+Vision is affected by the the Day/Night cycle
+Day/Night Cycle
+[www.dota2wiki.com]
+- As time passes, the game shifts between periods of daytime and nighttime.
+A full day/night cycle is 8 minutes. Day and Night last 4 minutes each.
+The first night begins at 4:00 on the game clock.
+Heroes have different sight ranges during the day and night. Most heroes' vision is restricted at night.
+A couple of heroes can manipulate the day and night.
+Night Stalker's ultimate ability -
+Darkness
+[www.dota2wiki.com]
+Luna's ultimate ability -
+Eclipse
+[www.dota2wiki.com]
+Most heroes have
+sight ranges
+[www.dota2wiki.com]
+during the day up to 1800 units and vision at night up 800 units.
+Elevation
+[www.dota2wiki.com]
+Ranged heroes attacking an enemy on higher elevation have a 25% chance to miss with their attack.
+Neutral Creep Camps
+A neutral camp will not respawn if there is a unit in the camp area.
+Camps fall into one of three groups based on how hard they are to kill. There are small camps, medium camps, and hard camps.
+Multiple creep groups can be
+stacked
+[www.dota2wiki.com]
+in one camp area by luring the existing creeps in the camp away before the timer reaches a new minute. More details in the Jungle section.
+Can also be drawn into the path of lane creeps to disrupt their path. This tactic is called pulling and is discussed later.
+A neutral creeps camp will not spawn the same set of neutral creeps twice in a row.
+Creep/Tower Aggression (Aggro) - A creep or tower's behavior and targeting priorities when encountering an enemy.
+Understanding the creep aggro mechanic is important to knowing how to harass effectively in lane and why stacking and pulling works.
+Creep Aggro
+Creeps will look to attack enemies in a 500 unit radius around them.
+They check for enemies every 2 seconds and may switch targets depending on the following:
+Creeps will look to attack the closest enemy to them.
+They will chase their current target as long as it is still the closest.
+Siege creeps prioritize towers over other creeps
+Creeps will attack enemy heroes that try to attack their allied heroes, regardless of the above conditions.
+Neutral creeps are "leashed" to the camp they spawn in. They will chase their target for a certain distance and then return back to the camp.
+Lane creeps are not leashed and may chase an enemy indefinitely.
+Tower Aggro
+An image describes the tower aggro mechanics and priorities.
+DotaCinema video on Creep and Tower Aggro
+
+--- Subsection 24 ---
+New players jungle to play PvE for the early game without having to worry about an enemy in lane. Competitive players jungle to maximize the amount of gold their team is farming, because otherwise the neutral creeps in the jungle are an unused source of gold.
+Regardless of why you're jungling, being able to do it effectively requires knowledge of how the jungle works and how your hero should approach jungling. Not every hero is capable of effectively farming the jungle and some are better at it than others.
+There are very few heroes that can jungle at level 1 and a jungler is not needed every game.
+Jungling is different than laning, because it requires the player to go up against the neutral camps alone without the aid of allied creeps. So good junglers have abilities that allow them to mitigate this damage, whether it's due to an ability to kill neutral camps quickly without taking too much damage or more commonly some sort of unit summoning ability that allows the hero to stand back while their minions kill the camp and tank damage.
+Starting items are also important for junglers and can determine whether a player successfully jungles or not.
+Additional Details on Neutral Creep Camps
+There are several different types of creep groups that may spawn in a camp. The type of creeps that spawn in a camp is random.
+Each type of creep camp also has a special ability.
+Small camps
+Medium camps
+Large camps
+Stacking
+Neutral creeps will spawn if there is no unit in or around the area of their neutral camp. This area is known as a neutral camp spawn box.
+Pulling
+As mentioned earlier, neutral creeps can be lured into a lane to divert the path of lane creeps.
+Here's an image showing timings of when a player should attack a neutral camp to begin drawing their aggro.
+A video by NinjaX titled "Jungling: Beyond The Basics"
+
+--- Subsection 25 ---
+Lane Control
+Understanding how a hero's presence can affect a lane and techniques for controlling a lane will allow a player to manipulate a lane to accomplish whatever they set out to do, such as farm safely near their own tower or push the lane out to kill the enemy tower.
+Lane/Creep Equilibrium
+Throughout the game, where creeps meet and fight each other is constantly shifting, especially once heroes are helping to kill them. During the laning phase, it's important to be aware of how far up or down the lane these fights are happening.
+It's much safer to last-hit creeps when the creeps are fighting closer to your tower, because of the protection it offers.
+If the enemy team tries to kill you as you attempt to last-hit, you can quickly retreat to to the tower where they will be less likely to pursue you.
+If the creeps are fighting further down the lane you're in a more dangerous position when you try to last-hit, because you're farther away from your tower.
+Depending on your hero's strengths you may want to actively try to push your lane towards the enemy tower to put pressure on it and allow you to eventually kill it. Having the enemy tower also killing off your creeps means that creep wave will be killed off faster, allowing the enemy creep wave to advance back to your tower sooner. This shifts the creep equilibrium for subsequent waves back closer to your tower.
+Last-hitting creeps disturbs the creep equilibrium, because you're helping your creeps kill off the enemy creeps. Over time this means your creep wave will slowly push towards the enemy tower, where it becomes more dangerous and difficult to continue to last-hit. This is why it is important to carefully time your attacks and only attack creeps if it's to get a killing blow.
+To counter the effects of last-hitting pushing the lane, you want to balance your last-hits with denies. This doesn't mean you need to wait to get a last hit on your own creeps. Attacking your own creeps once they half health will suffice since it will make your creep die quicker.
+Helping to kill off your own creeps negates the advantage you give to your creeps when you kill enemy creeps.
+Maintaining creep equilibrium through balanced last-hitting and denying results in creep waves meeting at the same place in the lane every time, wave after wave. Farming a lane while maintaining its equilibrium is known as
+static-farming
+[www.dota2wiki.com]
+.
+Manipulating Creep Line with Creep Aggro
+A technique beneficial for melee heroes is to draw creep aggro by attempting to attack an enemy hero in lane (right-clicking them) and then immediately moving away and back to your tower. The creeps will follow you until they reprioritize their target and return to attacking your creeps. This will result in a reversal of where your creeps and the enemy creeps are as pictured below.
+Having the enemy creeps on your side makes it safer to last hit, because now they're closer to you and you have your creeps in front to defend against enemy heroes.
+Pulling
+Neutral pulling is also a tactic used to divert your creeps from the lane.
+Instead of allowing your creeps to continue to move down the lane and ultimately engage the enemy creeps, they can be drawn out of a lane to fight the neutral creeps in a nearby jungle camp instead.
+This lets the enemy creep wave move all the way up to your own tower.
+If a neutral camp is stacked before your creep wave is pulled into it, the stacked neutral camp can completely kill off your own creep wave, thereby denying the enemy an creep wave of experience and gold.
+You can also last-hit the neutral camp and deny your own creeps just as you would if your creeps were fighting enemy creeps.
+Most of the time before you pull, you'll want to have the neutral camp stacked. So in general, always stack before you pull.
+However, a good enemy won't allow you to freely pull camps uncontested.
+They can completely prevent your neutral camp from spawning by placing a ward inside the camp, because neutral camps won't respawn if there is a unit in the area.
+They can also try to pull your pulled creeps back into the lane, or just try to farm off your creeps and the neutrals.
+Creep Block
+Heroes can slow down the movement of creeps by getting in front of them. This obstructs the creeps and forces them to move around the hero. If the hero does this at the beginning of a lane and keeps moving forward with the creeps while blocking them, this can make a significant impact on where the two creep lines will fight in lane.
+A hero creep blocking in the middle lane.
+The first picture below shows where the creeps would meet in the middle lane if both sides are unblocked. The second picture shows where the creeps meet if the player on the Dire side blocks his creeps. Note that the creeps meet at the top of the ramp. This gives the Dire player the elevation advantage, because it forces the Radiant player to stand in the river if he wants to last hit.
+Creep blocking is usually done on the first creep wave of the game and only by the middle lane and the Radiant players in the top lane and Dire players in the bottom lane.
+Harrassment
+You can control a lane by harassing enemy heroes that are in range of the creeps. With enough harassment, you can deter enemies from being able to get close enough to last-hit. And with dominating lane harassment, you can even push them so far away from the creeps to the point where they aren't getting experience.
+You want to maintain a presence in lane and make it felt by the other team so they don't feel they can safely last-hit.
+Ranged heroes are particularly effective at harassing, especially against melee heroes, because they can harass without the melee hero being able to counterattack.
+Harassing also forces heroes to use consumables to regenerate their health. Effective harassment will make the enemy use up all their consumables and keep them on low life which allows them to be killed easily. Enemies under harassment won't want to leave the lane to heal unless they're on the verge of dying, because they'll miss out on experience and gold from being in lane. This forces them to play more passively as they might just choose to stay in experience range and not get close enough to last-hit.
+Often times an enemy that is missing health from good harassment will still attempt to last-hit and overextend to the point where they can be easily finished off.
+Pictured below is an example of good harassment. The red arrow shows where the hero should move right after attacking to avoid taking damage from creep aggro and the enemy hero.
+Pictured below is an example of bad harassment. The hero is too close to the creep line and will take damage from creep aggro.
+You can also position yourself where it makes the enemy harder to harass you. In the above image, if the hero under harassment was positioned farther to the left and behind his creeps, it would eliminate good positions for the enemy to harass from.
+A DotaCinema video on basic pulling, and a great video by FiercE explaining Zoning and Positioning
+A video by FiercE demonstrating advanced creep pulling.
+
+--- Subsection 26 ---
+The shortest lane on the map. During the laning phase this lane is mostly a 1v1 between two solo mid heroes. Playing the mid lane is probably the hardest lane to play, but also one of the most rewarding as a good player in the mid lane can singlehandedly control and win a game.
+Heroes in the mid lane generally get a bottle so they can control the runes. Having a ward with vision of at least one of the rune spawns greatly helps in rune control. Heroes in the side lanes can also guard the rune spawn location right before a rune spawns to ensure their mid hero gets it.
+After hopefully winning their lane and picking up a good rune, mid heroes generally try to gank the enemy in the side lane. Pulling off a successful gank requires good knowledge of the game, because they needs to know the right time and place to gank.
+Most mid heroes are ranged, intelligence gankers although notable melee heroes include
+Tiny
+[www.dota2wiki.com]
+,
+Pudge
+[www.dota2wiki.com]
+.
+A dual mid lane is also viable. It is usually a melee carry with a support.
+A video by FiercE on how to solo mid.
+Bottle Crowing
+(Flying couriers were crows in the original DotA)
+Empty bottles can be refilled at the fountain while in a courier's inventory. While players are in a lane they can use their courier to refill their bottle without having their hero go back to the fountain to refill the bottle themselves. Players simply put their empty bottle on the courier, send the courier back to the fountain to refill the bottle, and then send the courier back to the player where the bottle can be put back on the hero.
+Note: Couriers move 30% slower while carrying an empty bottle.
+Bottle crowing is almost always only done by the player in the middle lane because they are usually the only ones who buy a bottle in the early game. The benefit of being able to get more health and mana regeneration without having to leave the lane can be the difference between winning and losing against your opponent in the middle lane.
+Another benefit of bottle crowing is that it allows a greater variety of heroes to start the game in the middle lane. Without the ability to refill a bottle, some heroes would not be able to sustain themselves in a lane against heroes that are better suited to laning in the middle lane. Such heroes are usually melee heroes who are trying to mid lane against ranged heroes who could easily harass them out of lane if it weren't for the regeneration given by a bottle. Another set of heroes that benefit from bottle crowing are those that rely on being able to use their abilities often to be effective in the lane, but would not have enough mana to do so if it weren't for bottle crowing.
+One of the downsides to this tactic is that the player bottle crowing prevents his teammates from also using the courier. However, with some coordination and communication, you can have the courier pick up your teammates items while also refilling the bottle. It is also not unheard of for competitive teams to pick up a second courier used solely by the player in the middle lane for bottle crowing constantly.
+
+--- Subsection 27 ---
+There are two side lanes, a top lane and a bottom lane, and they are both different in terms of strategy. Depending on how a team distributes their heroes on the map, you may see anywhere from 1 to 3 heroes in a sidelane during the early/laning phase of the game.
+The sidelanes are referred to as either the
+safelane
+or
+offlane
+. Which lane is which depends on whether you are the Radiant or Dire team. The Radiant considers the bottom lane their safelane and the top lane their offlane, while the Dire considers the top lane their safelane and the bottom lane their offlane.
+The safelane is adjacent to the jungle. This offers some protection from ganks because it acts as a buffer the enemy needs to travel through, as well as an additional source of farm from neutral camps. This makes the safelane an easier lane to stay alive and farm in compared to the other sidelane, hence it is also known as the
+easy lane
+.
+Dual Lane
+In most non-competitive level games, the common lane setup is a dual lane, 2 heroes in the lane. This is usually composed of a carry and a support. The carry will take most or all the farm in the lane, while the support harasses the enemy and tries to maintain lane control by stacking and pulling the jungle. Other common and effective dual lanes are strong combinations of heroes with stuns, allowing for aggressive early ganks on the enemy.
+Trilane
+Trilanes, 3 heroes in a lane, are common in competitive level play. However, they should be avoided in public games, especially at beginner levels, because of the added teamwork and coordination they require which is difficult to accomplish among a group of random players.
+Trilanes are usually composed of one carry hero being supported by two supports and they can either be aggressive or defense. They can be played in either side lane, and teams will usually go to the lane that gives them the best match up.
+The goal of an aggressive trilane is to get several early kills on the enemy, and the goal of a defensive trilane is just to secure farm for the carry. Trilanes are a big investment, because it requires your other lane to play solo and end up underfarmed and underleveled. So to be considered successful, a trilane needs to either get a lot of kills or secure a lot of farm for their carry. A game's outcome can hinge on the success of a trilane which is why it should only be played by experienced players.
+Trilanes require a lot of teamwork and coordination among the players in the lane, especially the two supports who must be actively trying to control the lane through neutral pulling. They have to be aware of their positioning as well, because if all three heroes spent the entire time sharing experience, their carry would be underleveled. So to allow their carry to gain enough experience, one or both of the supports will try to stay out of experience range as much as possible by moving around the jungle and zoning the enemy away from the creep line.
+The support stacking and pulling the jungle is also free to roam and often helps try to gank the mid lane.
+Solo Lane
+The offlane is also known as the solo lane, or suicide lane because it is usually where you would put a single hero as a result of having a jungler or a trilane in the other lane.
+Players in the offlane role (suicide solo) are just expected to get as much experience as they can while keeping a safe distance. Most of the time they won't be able to get close enough to last hit creeps and they aren't expected to.
+FiercE's guide to suicide laning and Purge's guide to trilaning.
+
+--- Subsection 28 ---
+Positioning - Knowing where your hero should be and how it should be moved.
+Map Awareness - Knowing where the enemy is and anticipating where they will be.
+Situational Awareness - Knowing when and how to adapt your playstyle to what is happening in the game. Includes knowing what the enemy is trying to do as well.
+Good positioning, map awareness, and situational awareness are important skills players should develop as they gain experience playing Dota 2. In addition to knowledge of game mechanics, these factors can be used to measure a player's skill. A player can learn all the heroes, items, and abilities in the game, but if they never improve their positioning and awareness, they'll never improve beyond a beginner level.
+Consequences of bad positioning and awareness.
+Putting your hero in dangerous places where you can be killed.
+Not recognizing what your team's lineup is good at doing, therefore not pursuing the optimal strategy that will help your team win. A couple examples are not taking towers with a push heavy team or trying to force early teamfights when your team is weaker early to mid game but stronger late game rather than play defensively and farm.
+Taking unnecessary amounts of damage from creep and hero harassment.
+Losing out on possible enemy hero kills because you're in a bad position from being overly cautious.
+Not being able to properly support teammates in lane or in teamfights.
+Arriving late to teamfights or to aid another hero.
+Letting the enemy team get an easy Roshan kill when it's clear they've been missing from the map for a while.
+Some examples of having good awareness:
+Knowing when a teammate can be helped, or if helping them will just result in your death as well. Sometimes it's better to just cut your losses.
+Knowing when it's time to completely retreat, or when it's time to turn back around and fight. It can be scary only having a small amount of health left, but under the right circumstances you can still make contributions to a teamfight or gank without taking too much risk.
+Knowing when and how to gank a hero.
+Knowing when you're in a vulnerable position and are likely to get ganked, because of missing enemy heroes.
+Warding
+Warding is the act of placing observer wards on the map. It's an important aspect of the game, because having vision of the map allows a team to react to what the enemy is doing. Having vision of key areas can prevent an ally from being ganked or it can help you gank the enemy.
+Wards can be placed almost anywhere on the ground, but there are a few common and important locations for them which provide vision of the most useful areas. In general, these are areas of higher elevation, provide vision of a rune spawn location, or provide vision of heavily trafficked ramps and choke points on the map.
+Good vision from wards will help your team position themselves in preparation for a teamfight, because you can see how the enemy is positioned.
+Wards should generally be bought by support heroes since they are the least farm and item dependent on a team. However, anyone can buy and place wards if they see their supports aren't willing to ward or can't afford to. Wards are well worth the 150 gold cost in this case, because having vision of the map can keep you from getting ganked and allows you to farm safely.
+Counterwarding
+Enemy observer and sentry wards are invisible to you, but your team's sentry wards can reveal them.
+Counterwarding or dewarding is the act of killing the enemy's observer and sentry wards using your own sentry wards. Eliminating an enemy's ward removes their vision of that area. This gives your team more freedom to move around and gank or farm without being seen.
+Warding and counterwarding are important to gaining map control and vision. In the early game, a ward which provides vision of a rune spawn location can help your team get the runes. As the game progresses, you will want to place wards in the enemy jungle to get vision to set up for ganks, or wards in your own jungle to prevent ganks from the enemy if you need to play defensively.
+Another important time and place to ward and counterward is before attempting to kill Roshan, You should always try to ward and counterward the area around the Roshan pit. This will allow your team to kill Roshan without the enemy knowing. If they do try to stop you from killing Roshan, you will be able to see them coming and prepare for a teamfight or retreat.
+A good support player should try to keep wards on the map as much as possible and will also attempt to counterward.
+gso's
+Ultimate Guide to Warding
+[www.team-dignitas.net]
+This guide lives up to its name. It contains many ward locations, shows what vision they provide, and when you would use them.
+
+--- Subsection 29 ---
+Some heroes can make better use out of certain items than others, because of their abilities and attributes. For example, it's better to have items that increase a hero's damage on a hero that has abilities and attributes that already give them high damage. On the other hand, a hero with a skillset that is focused more on supporting allies rather than dealing damage, wouldn't make good use out of an item that gives damage.
+There's only a limited amount of gold that can be gained by farming across the map, and it is not enough for every hero on a team to buy expensive items.
+In general, it's more effective to have farm concentrated on a few heroes rather than try to divide farm evenly among 5 heroes.
+Players need to consider which heroes on their team require more gold than others. To do so, it is important to learn which heroes are more item dependent than others.
+Because of the first point, we can start talking about heroes in terms of their item/farm dependence, i.e. how much gold they need to make a significant impact on the game relative to the other heroes in the game. Hard carries are item and farm dependent. Before they can start living up to their potential, they need to farm the for the necessary items. Hard supports are item independent. They can run around with nothing but boots and wards and still be useful and make an impact on the game. In terms of item and farm dependence, all heroes fall somewhere on the line between hard carry and hard support.
+Considering item and farm dependence, and the second point, we can conclude that the most farm should be given to your item dependent heroes and little farm should be given to item independent heroes. In other words, supports should make way for carries when it comes to farm.
+Entire strategies, and decisions are made based on securing farm for carries. Teams may be constantly ganking to make it unsafe for carries to farm. Teams may run a trilane to secure farm for a carry in that lane. Teams may stack ancient and jungle camps to get more farm. Teams may aggressively push down towers to limit space for the other team's carry to farm. Four players applying pressure to a tower allows their 5th player on a carry to freely farm elsewhere since the push forces the enemy team to TP and defend.
+Every hero has a different time during the game when they are most effective relative to other heroes. This may be a result of their abilities becoming stronger or weaker as the game progresses or as a result of acquiring certain items as the game progresses. Recognizing at what phase of the game your team will be the strongest is important when developing a strategy for winning. This also means giving farm to the heroes that need it the most.
+If your team has better heroes that excel in the late game than the other team, then the best strategy is to defend until that point.
+If your team excels in the early game with a strong ability to push and kill buildings quickly, then it would be best to try to end the game in the early to mid game before the enemy team gets too strong.
+
+--- Subsection 30 ---
+Disjointing Projectiles
+Ranged attacks and most spell projectiles can be dodged using various abilities and items. The idea is to use the ability or item while the projectile is in mid-air and before it hits your hero. Disjointing requires good awareness and reflexes.
+Possible ways to disjoint:
+Becoming invisible
+Using blink dagger or similar teleport abilities
+Activating illusions
+Sometimes only the disable portion of a spell can be avoided, with the damage still being taken by the hero.
+Activating
+manta style
+[www.dota2wiki.com]
+and a few other
+illusion abilities
+[www.dota2wiki.com]
+can purge debuffs from your hero.
+Animation Canceling
+Heroes have specific animations they perform before and after their attacks and abilities are performed.
+Before performing an attack, a hero goes through a frontswing animation. Once this animation is completed, either the damage is applied or the projectile is launched.
+After the attack is performed, the hero then goes through a backswing animation.
+The frontswing and backswing animations a hero goes through is analogous to throwing or hitting a ball. The frontswing is the windup, the actual attack is the moment of contact or release, and the backswing is the follow-through.
+The frontswing animation must always be performed, but the backswing animation may be canceled by ordering your hero to move.
+Canceling your hero's backswing animation allows you to cover some distance between your attacks. This allows you to pull off more hits on an enemy that is running away from you.
+Note: Animation canceling doesn't decrease the time between your attacks. Your attack speed is determined by other mechanics, see
+base attack time and increased attack speed
+[www.dota2wiki.com]
+.
+Casting abilities is similarly broken down into two animations, a cast frontswing and cast backswing. The idea behind animation canceling abilities is to stop them from being used even after you've already ordered your hero to use the ability. This is possible by ordering your hero to stop using the stop command while the hero is still performing the cast frontswing animation. If done successfully, the hero will stop and not cast the ability, saving its mana and keeping the ability off cooldown.
+Animation canceling abilities is useful for heroes that have long cast frontswing animations. If you see that your ability is going to miss, because the enemy has moved, you can animation cancel and try again.
+DotaCinema video on Animation Canceling
+Exceptions
+Dota 2 is full of exceptions. Exceptions usually involve some more complex mechanics that aren't well-known, something a new player wouldn't be expected to learn right away. You will come across these all the time as you start to play. Do not let them frustrate or discourage you.
+Here's an example involving the hero
+Juggernaut
+[www.dota2wiki.com]
+, his ability
+Blade Fury
+[www.dota2wiki.com]
+, and its interaction with
+Healing Salves
+[www.dota2wiki.com]
+.
+Consider a Juggernaut using a level 1 Blade Fury on an enemy hero. If the enemy hero were to use a healing salve, you'd expect Blade Fury to dispel it and stop the salve from healing, right? The basic description of a Healing Salve is "Restores HP over time. If the user is attacked, the effect is lost."
+But the reality is that a level 1 Blade Fury will not dispel a healing salve. To understand why, one needs to understand the mechanics behind how Blade Fury damage is applied and what precisely causes a healing salve to be dispelled.
+Contrary to the description, a healing salve will not dispel if the tick of damage taken after reductions is less than 20. So what about level 1 Blade Fury?
+Level 1 Blade Fury deals 400 damage over 5 seconds. What makes level 1 Blade Fury not dispel a healing salve is that the damage is delivered in ticks of 16 damage (12 after reductions), 5 times per second. Since each tick of damage is below 20, it is not enough to dispel a healing salve.
+Many other exceptions are based on obscure mechanics such as in the example just mentioned.
+
+--- Subsection 31 ---
+Official
+Dota 2 Blog
+Dota 2 Developer Forum
+Wikis and Other Information
+http://www.dota2wiki.com/wiki/Dota_2_Wiki
+Team Liquid Dota 2 wiki
+[wiki.teamliquid.net]
+Cyborgmatt's Patch Analysis
+[www.cyborgmatt.com]
+Guides and Image References
+Ultimate Guide to Warding
+[www.team-dignitas.net]
+Interactive Dota 2 map
+[devilesk.com]
+Dota 2 Community
+Dota 2 Reddit
+GosuGamers Dota 2 Forums
+[www.gosugamers.net]
+joinDOTA Forums
+[forum.gamesports.net]
+Team Liquid Dota 2 Forums
+[www.liquiddota.com]
+PlayDotA Forums
+[www.playdota.com]
+Original Dota
+http://www.playdota.com
+Has sections on Heroes, Items, Mechanics, and a Learn page.
+Competitive Scene, Community News, Articles, and Headlines
+GosuGamers Dota 2
+[www.gosugamers.net]
+joinDOTA
+[www.joindota.com]
+Team Liquid Dota 2
+[www.liquiddota.com]
+Dota 2 Statistics and Analysis
+datDota
+[www.datdota.com]
+"Statistics and analysis for the professional Dota 2 scene."
+Dota Academy
+[dota-academy.com]
+"Our objective is to bring you the most comprehensive Pro Dota 2 Database."
+DotaMetrics
+[dotametrics.wordpress.com]
+Streams - Watch live games of Dota 2, whether it's casters commentating professional games, or players streaming their own matchmaking games
+Twitch.tv Dota 2 Directory Listing
+[www.twitch.tv]
+Youtube Channels
+DotaCinema
+Weekly highlight videos, guide videos, and hero spotlights.
+PurgeGamers
+Youtube channel for Purge, a popular caster and streamer who creates content for teaching new players.
+Professor FiercE
+"Educational Dota 2 videos and other Dota 2 related content."
+
