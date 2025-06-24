@@ -1,0 +1,53 @@
+@prefix : <http://example.org/dota#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+### Relations ###
+:locatedIn         rdf:type owl:TransitiveProperty, owl:ObjectProperty ;
+                   rdfs:domain :Structure, :RoshanEntity, :Unit ;
+                   rdfs:range  :Map .
+
+:contains          rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :locatedIn ;
+                   rdfs:domain  :Map ;
+                   rdfs:range   :Structure, :Unit .
+
+:spawnInLocation   rdf:type owl:ObjectProperty ;
+                   rdfs:domain :LaneCreep, :NeutralCreep ;
+                   rdfs:range  :Jungle .
+
+:hasRespawnTimer   rdf:type owl:ObjectProperty ;
+                   rdfs:domain :RoshanPit, :TormentorPit ;
+                   rdfs:range  :RoshanRespawnTimer, :TormentorSpawnTimer .
+
+:playsFor          rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :Team .
+
+:hasAbility        rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :Ability .
+
+:usesItem          rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :Item .
+
+:controlsCourier   rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :CourierUnit .
+
+:atRuneLocation    rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :RuneSpawnLocation .
+
+:roleInTeam        rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :RoleClass .
+
+:adoptsTactic      rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :TacticsClass .
+
+:achievesObjective rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Hero ;
+                   rdfs:range  :GameObjective .
